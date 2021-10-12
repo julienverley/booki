@@ -18,16 +18,26 @@
 }
 
 
-
 /* Page main elements */
 
 body {
   font-family: raleway, sans-serif;
 }
 
+li {
+  font-size: 0.8em;
+}
+
+h1 {
+  font-weight:bolder;/* ? Pourquoi ça ne diminue pas ? OK c'était normalize.css */
+}
+
+p {
+  font-size:0.8em;
+}
 
 
-/* Header */
+/* ---- Header ---- */
 
 nav { 
   display: flex; 
@@ -61,7 +71,7 @@ a:hover /* Hovered links => overline */
 {
    text-decoration: none;
    color: #0065FC;
-   border: 5px solid #0065FC;
+   border: 2px solid #0065FC;
    border-right: none;
    border-left: none;
    border-bottom: none ;
@@ -103,7 +113,7 @@ a:hover /* Hovered links => overline */
   {
      text-decoration: none;
      color: #0065FC;
-     border: 3px solid #0065FC;
+     border: 2px solid #0065FC;
      border-right: none;
      border-left: none;
      border-top: none ;
