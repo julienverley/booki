@@ -32,12 +32,19 @@
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p> 
             </div>
-            <form method="post" action="traitement.php">
+            
+            <!-- Form (? or <textarea name="Mareseille, France"  cols="30" rows="1">Marseille, France</textarea> ?) -->
+            <form method="post" action="traitement.php"> 
+                <div class="icon">
+                    <i class="fas fa-map-marker-alt"></i> <!--Icon map-->
+                </div>
                 <p>
-                    <label for="formulaire_de_recherche">Icone de recherche </label>
-                    <textarea name="Mareseille, France" id="formulaire_de_recherche" placeholder="Marseille, France" cols="30" rows="1"></textarea>
-                </p> <!--Je peux supprimer la "Valeur par défaut" par l'exemple "Exemple de texte à écrire"-->
-                </form>
+                    <label for="recherche"></label>
+                    <input type="search" value="Marseille, France"  name=recherche id="recherche" />
+                    <input type="submit" value="Rechercher" id="button"> <!-- ? Comment faire en desktop un texte "Recherche" et en mobile une icone ? -->  
+                    <button type="submit" class="fas fa-search"></button> <!-- A revoir (et ligne précédente)-->
+                </p>
+            </form>
 
 
             <!-- Search & filters (& p) -->

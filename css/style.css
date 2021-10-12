@@ -1,5 +1,6 @@
 /* My CSS */
 
+
 /* box-sizing */
 * {
     box-sizing: border-box;
@@ -7,9 +8,9 @@
    }
 
 
-/* Personalized polices */
+ /* Personalized polices */
 
-@font-face /* .................................. */
+ @font-face /* .................................. */
 {
     font-family: 'raleway';
     src: url('raleway/static/Raleway-Medium.ttf') format('truetype'); 
@@ -37,28 +38,6 @@ p {
 }
 
 
-/* ---- Header ---- */
-
-nav { 
-  display: flex; 
-  justify-content: space-between;
-  text-align: center;
-}
-
-nav img {
-  height: 50px;
-  margin-left: 30px;
-}
-
-nav ul { 
-  display: flex; 
-  list-style: none;
-}
-
-nav li {
-  margin: 0 30px 0 20px;
-}
-
 /* Navigation */ 
 
 a /* Default links (non hovered) */
@@ -78,12 +57,13 @@ a:hover /* Hovered links => overline */
    padding-top: 13px;
 }
 
+
 /* Media queries */
+
 
 @media screen and (max-width: 992px) {
  
 }
-
 
 @media screen and (max-width: 768px) { 
   
@@ -120,8 +100,78 @@ a:hover /* Hovered links => overline */
      padding-bottom: 13px;
   }
 
+  #button {
+    display: none; 
+  }
+
+  .fas fa-search { /* ?? Difficultés à utiliser l'icone font awesome dans l'input (button) type="submit" cf. form */  
+    border-radius: 0 10px 10px 0; 
+    background-color: #0065FC;
+    border: solid #0065FC;
+    color: white;
+    position: absolute;
+  }
+
 }
 
-/* Main */
 
 
+/* ---- Header ---- */
+
+nav { 
+  display: flex; 
+  justify-content: space-between;
+  text-align: center;
+}
+
+nav img {
+  height: 50px;
+  margin-left: 30px;
+}
+
+nav ul { 
+  display: flex; 
+  list-style: none;
+}
+
+nav li {
+  margin: 0 30px 0 20px;
+}
+
+
+
+/* ---- Main ---- */
+
+
+/* Form */
+
+form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.icon {
+  padding: 5px 10px;
+  background-color: #f2f2f2;
+  border-radius: 10px 0 0 10px; 
+}
+
+form p input {
+  padding: 5px;
+  border: none;
+}
+
+#button {
+  border-radius: 0 10px 10px 0; 
+  background-color: #0065FC;
+  border: solid #0065FC;
+  color: white;
+  position: absolute;
+}
+
+#recherche {
+  border: solid #f2f2f2;
+  border-right: none;
+}
