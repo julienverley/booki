@@ -15,7 +15,7 @@
         <!-- Header : logo & menu Hébergement Activités -->
         <header>
             <nav>
-                <img src="images/logo/Booki.png" alt="Logo" />
+                <img src="images/logo/Booki.png" alt="Logo" /> <!-- ! Firefox mobile : logo déformé -->
                 <ul>
                     <li><a href="#">Hébergements</a></li>
                     <li><a href="#">Activités</a></li>
@@ -33,21 +33,22 @@
                 <p>En plein centre ville ou en pleine nature</p> 
             </div>
             
-            <!-- Form (? or <textarea name="Mareseille, France"  cols="30" rows="1">Marseille, France</textarea> ?) -->
+
+            <!-- Form -->
             <form method="post" action="traitement.php"> 
-                <div class="icon">
+                <div class="icon_map">
                     <i class="fas fa-map-marker-alt"></i> <!--Icon map-->
                 </div>
                 <p>
                     <label for="recherche"></label>
                     <input type="search" value="Marseille, France"  name=recherche id="recherche" />
-                    <input type="submit" value="Rechercher" id="button"> <!-- ? Comment faire en desktop un texte "Recherche" et en mobile une icone ? -->  
-                    <button type="submit" class="fas fa-search"></button> <!-- A revoir (et ligne précédente)-->
+                    <input type="submit" value="Rechercher" id="button_desktop"> <!-- Version desktop -->
+                    <button type="submit" class="fas fa-search"></button> <!-- ! Firefox mobile : icone ligne en dessous -->
                 </p>
             </form>
 
 
-            <!-- Search & filters (& p) -->
+            <!-- Filters -->
                 
                 <div> <!-- Filters -->
                         <i class="fa fa-money-bill-wave"></i><!--Icon money-->

@@ -38,6 +38,8 @@ p {
 }
 
 
+
+
 /* Navigation */ 
 
 a /* Default links (non hovered) */
@@ -67,6 +69,7 @@ a:hover /* Hovered links => overline */
 
 @media screen and (max-width: 768px) { 
   
+  /* Header @media */
   header nav { /* ? Pourquoi le logo se déformait ? */
     flex-direction: column; /* ? li centrées plus à droite ça va ? */
     align-items: flex-start;
@@ -100,20 +103,27 @@ a:hover /* Hovered links => overline */
      padding-bottom: 13px;
   }
 
-  #button {
+
+  /* Form @media */
+  #button_desktop {
     display: none; 
   }
 
-  .fas fa-search { /* ?? Difficultés à utiliser l'icone font awesome dans l'input (button) type="submit" cf. form */  
+  button { /* ! Firefox mobile : le bouton va à la ligne ! */  
     border-radius: 0 10px 10px 0; 
     background-color: #0065FC;
     border: solid #0065FC;
     color: white;
+    height: 27px; /* ! bidouille ! */ 
     position: absolute;
+    left: 179px; /* ! bidouille ! */ 
+  }
+
+  form p {
+    align-items: center; /* (redoudant) */
   }
 
 }
-
 
 
 /* ---- Header ---- */
@@ -124,7 +134,7 @@ nav {
   text-align: center;
 }
 
-nav img {
+nav img { /* ! Firefox mobile : logo se déforme */
   height: 50px;
   margin-left: 30px;
 }
@@ -152,7 +162,11 @@ form {
   position: relative;
 }
 
-.icon {
+form p {
+  align-items: center;
+}
+
+.icon_map {
   padding: 5px 10px;
   background-color: #f2f2f2;
   border-radius: 10px 0 0 10px; 
@@ -163,15 +177,16 @@ form p input {
   border: none;
 }
 
-#button {
+#button_desktop {
   border-radius: 0 10px 10px 0; 
   background-color: #0065FC;
   border: solid #0065FC;
   color: white;
   position: absolute;
+  height: 28px; /* ! bidouille ! */ 
+  left: 179px; /* ! bidouille ! */ 
 }
 
 #recherche {
-  border: solid #f2f2f2;
-  border-right: none;
+  border: solid #f2f2f2 2px;
 }
