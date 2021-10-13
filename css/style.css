@@ -1,4 +1,14 @@
-/* My CSS */
+/* style.css Menu : */
+
+/* box-sizing */
+/* Page main elements */
+/* Navigation */ 
+/* Media queries */
+/* ---- Header ---- */
+/* ---- Main ---- */
+  /* Form */
+  /* Filters */
+/* ---- Footer ---- */
 
 
 /* box-sizing */
@@ -13,8 +23,6 @@
  @font-face /* .................................. */
 {
     font-family: 'raleway';
-    src: url('raleway/static/Raleway-Medium.ttf') format('truetype'); 
-    font-weight: normal;
     font-style: normal;
 }
 
@@ -30,15 +38,24 @@ li {
 }
 
 h1 {
-  font-weight:bolder;/* ? Pourquoi ça ne diminue pas ? OK c'était normalize.css */
+  font-weight: 600;/* ? Impossible de faire plus gras ? C'est normalize.css ? */
 }
 
 p {
   font-size:0.8em;
 }
 
+#bloc_page {
+  margin-left: 40px;
+}
 
+h2 {
+  font-size: 1.3em;
+}
 
+h3 {
+  font-size: 1.2em;
+}
 
 /* Navigation */ 
 
@@ -135,7 +152,7 @@ nav {
 }
 
 nav img { /* ! Firefox mobile : logo se déforme */
-  height: 50px;
+  height: 40px;
   margin-left: 30px;
 }
 
@@ -189,4 +206,11 @@ form p input {
 
 #recherche {
   border: solid #f2f2f2 2px;
+}
+
+/* Filters */
+
+#filters {
+  display: flex;
+  flex-direction: row;
 }
