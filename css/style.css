@@ -50,11 +50,11 @@ p {
 }
 
 h2 {
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 /* Navigation */ 
@@ -102,11 +102,8 @@ a:hover /* Hovered links => overline */
   
   nav img {
     text-align: left;
-  }
-  
-  nav img {
-    height: 50px;
-    width: min-content;
+    height: 50px; /* Le @media n'agissait pas, car j'avais un css width: min-content; */
+    object-fit: cover; /* ! Le logo n'est plus déformé mais agrandi ! */
   }
 
   a:hover /* Hovered links => underline */
@@ -148,11 +145,10 @@ a:hover /* Hovered links => overline */
 nav { 
   display: flex; 
   justify-content: space-between;
-  text-align: center;
 }
 
 nav img { /* ! Firefox mobile : logo se déforme */
-  height: 40px;
+  height: 50px;
   margin-left: 30px;
 }
 
@@ -210,7 +206,32 @@ form p input {
 
 /* Filters */
 
-#filters {
+#line_filter {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.filter {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  margin-right: 1%;
+  padding: 1%;
+  border-radius: 30px;
+  border: solid #f2f2f2 2px;
+}
+
+.filter div { /* Icons */
+  padding: 5%;
+  background-color: #f2f2f2;
+  border-radius: 30px; 
+}
+
+h3 { /* ? Comment écrire Animaux autorisés sur une seule ligne ? */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin : 0%;
 }
