@@ -3,6 +3,10 @@
 <head>
     <meta charset="utf-8" name="viewport" content="width=device-width"/> <!--viewport et content="width..." pour le responsive-->
     <link rel="stylesheet" href="css/style.css"/> 
+    <link rel="stylesheet" href="css/header.css"/> 
+    <link rel="stylesheet" href="css/search.css"/> 
+    <link rel="stylesheet" href="css/filters.css"/> 
+    <link rel="stylesheet" href="css/sections.css"/> 
     <link rel = 'stylesheet' href = 'css/normalize.css'> <!-- normalize.css-->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"><!--Police Raleway de Google Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet"><!--Weight 600 Police Raleway de Google Font-->
@@ -12,11 +16,12 @@
 <body>
    <div id="bloc_page">
     
+
         
         <!-- Header : logo & menu Hébergement Activités -->
         <header>
             <nav>
-                <img src="images/logo/Booki.png" alt="Logo" /> <!-- ! Firefox mobile : logo déformé -->
+                <img src="images/logo/Booki.png" alt="Logo" />
                 <ul>
                     <li><a href="#">Hébergements</a></li>
                     <li><a href="#">Activités</a></li>
@@ -28,6 +33,7 @@
         <main> 
             
 
+
             <!-- Title (h1 & p) -->
             <div>
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -35,43 +41,58 @@
             </div>
             
 
-            <!-- Form -->
+
+            <!-- Search form -->
             <form method="post" action="traitement.php"> 
                 <div class="icon_map">
                     <i class="fas fa-map-marker-alt"></i> <!--Icon map-->
                 </div>
-                <p>
+                <div id="search">
                     <label for="recherche"></label>
                     <input type="search" value="Marseille, France"  name=recherche id="recherche" />
+                </div>
+                <div id="seach_desktop"><!-- Version desktop -->
+                    <input type="submit" value="Rechercher" id="button_desktop"> <!-- Version desktop -->
+                </div>
+                <div id="search_mobile"><!-- ! Firefox mobile : icone ligne en dessous -->
                     <input type="submit" value="Rechercher" id="button_desktop"> <!-- Version desktop -->
                     <button type="submit" class="fas fa-search"></button> <!-- ! Firefox mobile : icone ligne en dessous -->
-                </p>
+                </div>
+                <br />
             </form>
 
 
-            <!-- Filters -->
-                
-            <div id="line_filter">
-                <h3>Filtres</h3>
-                <div class="filter">
-                    <div><i class="fa fa-money-bill-wave"></i></div><!--Icon money-->
-                    <h3>Economique</h3>
+
+            <!-- Filters !-->
+                <div id="line_filter">
+                    <div><h3>Filtres</h3></div> <!--Mot Filtres sans icône-->
+                    <div class="filter">
+                        <div><i class="fa fa-money-bill-wave"></i></div><div><h3>Economique</h3></div>
+                    </div>
+                    <div class="filter">
+                        <div><i class="fa fa-child"></i></div><div><h3>Familial</h3></div>
+                    </div>    
+                    
+                    <div class="filter">
+                        <div><i class="fa fa-heart"></i></div><div><h3>Romantique</h3></div>
+                    </div>    
+                    <div class="filter">
+                        <div><i class="fa fa-dog"></i></div><div><h3>Animaux autorisés</h3></div>
+                    </div>    
                 </div>
-                <div class="filter">
-                    <div><i class="fa fa-child"></i></div><!--Icon child-->
-                    <h3>Familial</h3>
-                </div>    
-                
-                <div class="filter">
-                    <div><i class="fa fa-heart"></i></div><!--Icon heart-->
-                    <h3>Romantique</h3>
-                </div>    
-                <div class="filter">
-                    <div><i class="fa fa-dog"></i></div><!--Icon dog-->
-                    <h3>Animaux autorisés</h3>
-                </div>    
-            </div>
            
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

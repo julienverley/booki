@@ -1,0 +1,65 @@
+/* Search form */
+
+form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1.5em; 
+  margin-bottom: 1.5em;
+}
+
+.icon_map {
+  padding: 11px 13px;
+  background-color: #f2f2f2;
+  border-radius: 10px 0 0 10px; 
+}
+form div input {
+  height: 40px;
+  padding-left: 10px;
+}
+
+#button_desktop {
+  border-radius: 0 10px 10px 0; 
+  background-color: #0065FC;
+  border: solid #0065FC;
+  color: white;
+}
+
+#recherche {
+  border: solid #f2f2f2 2px;
+}
+
+#search_mobile {
+  display: none;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) { /* Mobile */
+  
+  #button_desktop {
+    display: none; 
+  }
+
+  #search_mobile {
+    display: inline-block;
+  }
+  
+  button { /* ! Firefox mobile : le bouton va à la ligne ! J'ai enlevé la position absolute */  
+    height: 40px;
+    width: 40px;
+    border-radius: 10px; 
+    background-color: #0065FC;
+    border: solid #0065FC;
+    color: white;
+  }
+
+  form p {
+    align-items: center; /* (redoudant) */
+    display: flex;
+    flex-direction: flex-start;
+  }
+

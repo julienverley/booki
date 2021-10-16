@@ -1,0 +1,44 @@
+/* Filters */
+
+
+#line_filter { /* OK, il reste de la place */ /* ! Ici le problème de Animaux autorisés sur 2 lignes ! */
+  display: flex; /* <-- Sans le display flex, Animaux autorisés sur 1 seule ligne */
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 1.5em; 
+  margin-bottom: 1.5em;
+}
+
+#line_filter div { /* Entre les filtres */
+  margin-right: 2%;
+}
+
+.filter {  /* Parent de l'icône et du h3 */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; 
+  margin-left: 1%;
+  padding-right: 4%;
+  border-radius: 25px;
+  border: solid #f2f2f2 2px;
+}
+
+.filter div i { /* Icons */ /* ? Faut-il que les icônes dépassent davantage du cadre à gauche ? */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  color: #0065FC;
+  background-color: #DEEBFF; 
+  border-radius: 30px; 
+}
+
+h3 { /* ? Comment écrire Animaux autorisés sur une seule ligne ? */
+  display: flex;
+  flex-direction: row;
+  margin-left: 1%;
+  padding-left: 5%;
+  overflow: visible;
+}

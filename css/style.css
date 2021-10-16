@@ -1,14 +1,8 @@
-/* style.css Menu : */
-
-/* box-sizing */
 /* Page main elements */
-/* Navigation */ 
-/* Media queries */
-/* ---- Header ---- */
-/* ---- Main ---- */
-  /* Form */
-  /* Filters */
-/* ---- Footer ---- */
+  /* box-sizing */  
+  /* Navigation */ 
+  /* Media queries */
+
 
 
 /* box-sizing */
@@ -22,8 +16,8 @@
 
  @font-face /* .................................. */
 {
-    font-family: 'raleway';
-    font-style: normal;
+  font-family: 'raleway';
+  font-style: normal;
 }
 
 
@@ -46,7 +40,12 @@ p {
 }
 
 #bloc_page {
-  margin-left: 40px;
+  margin-left: 0;
+}
+
+main {
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 h2 {
@@ -57,181 +56,14 @@ h3 {
   font-size: 1.1em;
 }
 
-/* Navigation */ 
-
-a /* Default links (non hovered) */
-{
-   text-decoration: none;
-   color: black;
-}
-
-a:hover /* Hovered links => overline */
-{
-   text-decoration: none;
-   color: #0065FC;
-   border: 2px solid #0065FC;
-   border-right: none;
-   border-left: none;
-   border-bottom: none ;
-   padding-top: 13px;
-}
-
 
 /* Media queries */
 
-
 @media screen and (max-width: 992px) {
- 
 }
 
 @media screen and (max-width: 768px) { 
-  
-  /* Header @media */
-  header nav { /* ? Pourquoi le logo se déformait ? */
-    flex-direction: column; /* ? li centrées plus à droite ça va ? */
-    align-items: flex-start;
-  }
-
-  header nav ul {
-    display: flex;
-  }
-
-  header nav ul li {
-    margin-left: 0; /* ? Pourquoi la marge du menu est-elle calée sur celle du logo ? */
-  }
-  
-  nav img {
-    text-align: left;
-    height: 50px; /* Le @media n'agissait pas, car j'avais un css width: min-content; */
-    object-fit: cover; /* ! Le logo n'est plus déformé mais agrandi ! */
-  }
-
-  a:hover /* Hovered links => underline */
-  {
-     text-decoration: none;
-     color: #0065FC;
-     border: 2px solid #0065FC;
-     border-right: none;
-     border-left: none;
-     border-top: none ;
-     padding-bottom: 13px;
-  }
-
-
-  /* Form @media */
-  #button_desktop {
-    display: none; 
-  }
-
-  button { /* ! Firefox mobile : le bouton va à la ligne ! */  
-    border-radius: 0 10px 10px 0; 
-    background-color: #0065FC;
-    border: solid #0065FC;
-    color: white;
-    height: 27px; /* ! bidouille ! */ 
-    position: absolute;
-    left: 179px; /* ! bidouille ! */ 
-  }
-
-  form p {
-    align-items: center; /* (redoudant) */
-  }
-
-}
-
-
-/* ---- Header ---- */
-
-nav { 
-  display: flex; 
-  justify-content: space-between;
-}
-
-nav img { /* ! Firefox mobile : logo se déforme */
-  height: 50px;
-  margin-left: 30px;
-}
-
-nav ul { 
-  display: flex; 
-  list-style: none;
-}
-
-nav li {
-  margin: 0 30px 0 20px;
-}
-
-
-
-/* ---- Main ---- */
-
-
-/* Form */
-
-form {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  position: relative;
-}
-
-form p {
-  align-items: center;
-}
-
-.icon_map {
-  padding: 5px 10px;
-  background-color: #f2f2f2;
-  border-radius: 10px 0 0 10px; 
-}
-
-form p input {
-  padding: 5px;
-  border: none;
-}
-
-#button_desktop {
-  border-radius: 0 10px 10px 0; 
-  background-color: #0065FC;
-  border: solid #0065FC;
-  color: white;
-  position: absolute;
-  height: 28px; /* ! bidouille ! */ 
-  left: 179px; /* ! bidouille ! */ 
-}
-
-#recherche {
-  border: solid #f2f2f2 2px;
-}
-
-/* Filters */
-
-#line_filter {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.filter {
-  display: flex;
-  flex-direction: row;
-  align-items: center; 
-  margin-right: 1%;
-  padding: 1%;
-  border-radius: 30px;
-  border: solid #f2f2f2 2px;
-}
-
-.filter div { /* Icons */
-  padding: 5%;
-  background-color: #f2f2f2;
-  border-radius: 30px; 
-}
-
-h3 { /* ? Comment écrire Animaux autorisés sur une seule ligne ? */
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  margin : 0%;
+  main {
+    margin-left: 20px;
+    margin-right: 20px;
 }
