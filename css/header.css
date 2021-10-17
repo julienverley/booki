@@ -1,75 +1,82 @@
-/* ---- Header ---- */
+/* Header */
 
-nav { 
-  display: flex; 
-  justify-content: space-between;
-  text-align: center;
+header {
+  margin-bottom: 3em;
 }
 
-nav img { /* ! Firefox mobile : logo se déforme */
-  height: 50px;
-  margin-left: 30px;
-  margin-top: 30px;
+/* Navigation */
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
-nav ul { 
-  display: flex; 
-  list-style: none;
+.size_nav {
+  height: 100px; 
 }
 
-nav li {
-  margin: 30px 30px 0 20px;
+.size_links {
+  width: 30%; 
 }
 
-/* Navigation */ 
-
-a /* Default links (non hovered) */
-{
-   text-decoration: none;
-   color: black;
+.size_link {
+  width: 150px;
+  height: 99px;
 }
 
-a:hover /* Hovered links => overline */
-{
-   text-decoration: none;
-   color: #0065FC;
-   border: 2px solid #0065FC;
-   border-right: none;
-   border-left: none;
-   border-bottom: none ;
-   padding-top: 43px;
+.border_link { /* Si je le veux de manière permanente */
+  border-top: 2px solid white;
 }
+
+.margin_logo {
+  margin-bottom: 10px;
+}
+
+
+/* Hover */ 
+
+.border_link:hover {
+  border: 2px solid #0065FC;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+}
+
 
 /* Media queries */
 
 @media screen and (max-width: 992px) {
+
 }
 
 @media screen and (max-width: 768px) { 
   
-  /* Header @media */
-  header nav { /* ? Pourquoi le logo se déformait ? */
+  header nav div {
     display: flex;
-    flex-direction: column; /* ? li centrées plus à droite ça va ? */
-    align-items: center;
+    flex-direction: column;
   }
 
-  header nav ul {
-    display: flex;
+  .border_link:hover {
+    border-bottom: 3px solid #0065FC;
+    border-left: none;
+    border-top: none;
+    border-right: none;
   }
 
-  header nav ul li {
+  .size_links {
+    width: 100%; 
+    margin-bottom: 50px;
+  }
+
+  .size_link {
+    width: 50%;
+    height: 50px;
+  }
+
+  #header_link {
+    display: flex; 
+    flex-direction: row;
     justify-content: space-between;
   }
-
-   /* Navigation */
-   a:hover /* Hovered links => underline */
-   {
-      text-decoration: none;
-      color: #0065FC;
-      border: 2px solid #0065FC;
-      border-right: none;
-      border-left: none;
-      border-top: none ;
-      padding-bottom: 13px;
-   }
+  /* ........... */ 
+}

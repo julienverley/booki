@@ -1,44 +1,94 @@
-/* Filters */
+/* Filters and information */ 
 
-
-#line_filter { /* OK, il reste de la place */ /* ! Ici le problème de Animaux autorisés sur 2 lignes ! */
-  display: flex; /* <-- Sans le display flex, Animaux autorisés sur 1 seule ligne */
-  flex-wrap: wrap;
-  align-items: center;
-  margin-top: 1.5em; 
-  margin-bottom: 1.5em;
+.margin_filter {
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
-#line_filter div { /* Entre les filtres */
-  margin-right: 2%;
-}
-
-.filter {  /* Parent de l'icône et du h3 */
+.filter_section {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center; 
-  margin-left: 1%;
-  padding-right: 4%;
-  border-radius: 25px;
-  border: solid #f2f2f2 2px;
 }
 
-.filter div i { /* Icons */ /* ? Faut-il que les icônes dépassent davantage du cadre à gauche ? */
-  display: flex;
-  justify-content: center;
+.filter {
+  display: flex; 
   align-items: center;
+}
+
+.margin_filter_title {
+  margin-right: 4%;
+}
+
+.filter_text_icons {
+  display: flex;
+  border: 2px solid #f2F2F2;
+  border-radius: 25px;
+  height: 50px;
+  margin-right: 4%;
+  padding-right: 3%;
+  padding-left: 1%;
+}
+
+.filter_text { 
+  height: 50px;
+  border-radius: 0 25 px 25px 0;
+}
+
+.filter_icons { /* Cf. .flex_center Firefox mobile, icones pas centrées. Dans l'inspecteur, si j'enlève l'inline-block, ça se recentre */
+  margin-left: -33%;
+  border-radius: 25px;
   width: 50px;
   height: 50px;
-  color: #0065FC;
-  background-color: #DEEBFF; 
-  border-radius: 30px; 
+  color: #0065FC; 
+  background-color: #DEEBFF;  
 }
 
-h3 { /* ? Comment écrire Animaux autorisés sur une seule ligne ? */
+.margin_information {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.information_section {
   display: flex;
-  flex-direction: row;
-  margin-left: 1%;
-  padding-left: 5%;
-  overflow: visible;
+  align-items: center;
+}
+
+.information_icon {
+  margin-right: 1%;
+  border-radius: 25px;
+  width: 30px;
+  height: 30px;
+  color: #0065FC; 
+  border: 2px solid #f2F2F2; 
+  background-color:white;  
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 992px) {
+
+  .filter {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .filter_section {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .filter {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .filter_section {
+    display: flex;
+    flex-direction: column;
+  }  
 }

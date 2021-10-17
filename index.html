@@ -20,19 +20,32 @@
         
         <!-- Header : logo & menu Hébergement Activités -->
         <header>
-            <nav>
-                <img src="images/logo/Booki.png" alt="Logo" />
-                <ul>
-                    <li><a href="#">Hébergements</a></li>
-                    <li><a href="#">Activités</a></li>
-                </ul>
+            <nav class="size_nav">
+                <div class="flex_between">
+                    <div>
+                        <img 
+                            class="margin_logo"
+                            src="images/logo/Booki.png" 
+                            alt="Logo" 
+                            width="95px"
+                            height="45px"
+                        />
+                    </div>
+                    <div id="header_link" class="flex_around size_links">
+                        <div class="size_link border_link flex_center">
+                            <a class="decoration_none" href="#">Hébergements</a>
+                        </div>
+                        <div class="size_link border_link flex_center">
+                            <a class="decoration_none" href="#">Activités</a>
+                        </div>
+                    </div>
+                </div>
             </nav>
         </header> 
 
         <!-- Main -->
         <main> 
             
-
 
             <!-- Title (h1 & p) -->
             <div>
@@ -41,46 +54,74 @@
             </div>
             
 
-
             <!-- Search form -->
             <form method="post" action="traitement.php"> 
                 <div class="icon_map">
-                    <i class="fas fa-map-marker-alt"></i> <!--Icon map-->
+                    <i class="fas fa-map-marker-alt"></i><!--Icon map-->
                 </div>
                 <div id="search">
                     <label for="recherche"></label>
                     <input type="search" value="Marseille, France"  name=recherche id="recherche" />
                 </div>
                 <div id="seach_desktop"><!-- Version desktop -->
-                    <input type="submit" value="Rechercher" id="button_desktop"> <!-- Version desktop -->
+                    <input type="submit" value="Rechercher" id="button_desktop"><!-- Version desktop -->
                 </div>
-                <div id="search_mobile"><!-- ! Firefox mobile : icone ligne en dessous -->
-                    <input type="submit" value="Rechercher" id="button_desktop"> <!-- Version desktop -->
-                    <button type="submit" class="fas fa-search"></button> <!-- ! Firefox mobile : icone ligne en dessous -->
+                <div id="search_mobile">
+                    <input type="submit" value="Rechercher" id="button_desktop"><!-- Version desktop -->
+                    <button type="submit" class="fas fa-search"></button>
                 </div>
                 <br />
             </form>
 
 
-
             <!-- Filters !-->
-                <div id="line_filter">
-                    <div><h3>Filtres</h3></div> <!--Mot Filtres sans icône-->
-                    <div class="filter">
-                        <div><i class="fa fa-money-bill-wave"></i></div><div><h3>Economique</h3></div>
+            <div class="filter_section margin_filter"><!--.filter_section-->
+                <div class="margin_filter_title"><h3>Filtres</h3><!--Mot Filtres sans icône-->
+                </div> 
+                <div class="filter"><!--.filter--> 
+                    <div class="filter_text_icons flex_between"><!--.filter_text_icons-->
+                        <div><i class="fa fa-money-bill-wave fa-lg filter_icons flex_center"></i></div><!--.filter_icons--><!--fa-lg pour zoomer sur l'icône-->
+                        <div class="filter_text"><h3>Economique</h3></div><!--.filter_text-->
                     </div>
-                    <div class="filter">
-                        <div><i class="fa fa-child"></i></div><div><h3>Familial</h3></div>
+                    <div class="filter_text_icons flex_between">
+                        <div><i class="fa fa-child fa-lg filter_icons flex_center"></i></div>
+                        <div class="filter_text"><h3>Familial</h3></div>
                     </div>    
-                    
-                    <div class="filter">
-                        <div><i class="fa fa-heart"></i></div><div><h3>Romantique</h3></div>
+                    <div class="filter_text_icons flex_between">
+                        <div><i class="fa fa-heart fa-lg filter_icons flex_center"></i></div>
+                        <div class="filter_text"><h3>Romantique</h3></div>
                     </div>    
-                    <div class="filter">
-                        <div><i class="fa fa-dog"></i></div><div><h3>Animaux autorisés</h3></div>
+                    <div class="filter_text_icons flex_between">
+                        <div><i class="fa fa-dog fa-lg filter_icons flex_center"></i></div>
+                        <div class="filter_text flex_center"><h3>Animaux autorisés</h3></div>
                     </div>    
                 </div>
-           
+            </div>
+
+            <div class ="information_section margin_information">
+                <i class="fas fa-info fa-sm information_icon flex_center"></i>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

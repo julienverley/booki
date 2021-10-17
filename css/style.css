@@ -1,7 +1,9 @@
-/* Page main elements */
-  /* box-sizing */  
-  /* Navigation */ 
-  /* Media queries */
+/* box-sizing */  
+/* Personalized polices */
+/* Flexbox */
+/* Class */ 
+/* Main elements */ 
+/* Media queries */
 
 
 
@@ -9,19 +11,62 @@
 * {
     box-sizing: border-box;
    /* box-sizing applied to all elements */
-   }
+}
 
 
- /* Personalized polices */
+/* Personalized polices */
 
- @font-face /* .................................. */
-{
+ @font-face { /* .................................. */
   font-family: 'raleway';
   font-style: normal;
 }
 
 
-/* Page main elements */
+/* Flexbox */
+
+.flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex_around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex_between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* Class */ 
+
+.decoration_none {
+  text-decoration: none;
+}
+
+.color_blue {
+  color: #0065FC; 
+}
+
+.color_blue_light {
+  color: #DEEBFF; 
+}
+
+/* Main elements */
+
+main {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+#bloc_page {
+  margin-left: 0;
+}
 
 body {
   font-family: raleway, sans-serif;
@@ -31,21 +76,12 @@ li {
   font-size: 0.8em;
 }
 
-h1 {
-  font-weight: 600;/* ? Impossible de faire plus gras ? C'est normalize.css ? */
-}
-
 p {
   font-size:0.8em;
 }
 
-#bloc_page {
-  margin-left: 0;
-}
-
-main {
-  margin-left: 25px;
-  margin-right: 25px;
+h1 {
+  font-weight: 600;/* ? Impossible de faire plus gras ? C'est normalize.css ? */
 }
 
 h2 {
