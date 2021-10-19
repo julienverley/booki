@@ -56,110 +56,117 @@
 
             <!-- Search form -->
             <form method="post" action="traitement.php"> 
-                <div class="icon_map">
+                <div class="map_icon">
                     <i class="fas fa-map-marker-alt"></i><!--Icon map-->
                 </div>
                 <div id="search">
                     <label for="recherche"></label>
                     <input type="search" value="Marseille, France"  name=recherche id="recherche" />
                 </div>
-                <div id="seach_desktop"><!-- Version desktop -->
-                    <input type="submit" value="Rechercher" id="button_desktop"><!-- Version desktop -->
+                <div id="search_desktop"><!-- Version desktop -->
+                    <input type="submit" value="Rechercher" id="search_button"><!-- Version desktop -->
                 </div>
-                <div id="search_mobile">
-                    <input type="submit" value="Rechercher" id="button_desktop"><!-- Version desktop -->
-                    <button type="submit" class="fas fa-search"></button>
+                <div id="search_mobile"><!--Version mobile-->
+                    <input type="submit" value="Rechercher" id="search_button">
+                    <div id="search_button_mobile"><button type="submit" class="fas fa-search"></button></div>
                 </div>
                 <br />
             </form>
 
 
             <!-- Filters !-->
-            <div class="filter_section margin_filter"><!--.filter_section-->
-                <div class="margin_filter_title"><h3>Filtres</h3><!--Mot Filtres sans icône-->
+            <div class="filter_section .margin_between_sections" {
+                "><!--.filter_section-->
+                <div class="margin_filter_title flex_center"><h3>Filtres</h3><!--Mot Filtres sans icône-->
                 </div> 
                 <div class="filter"><!--.filter--> 
                     <div class="filter_text_icons flex_between"><!--.filter_text_icons-->
-                        <div><i class="fa fa-money-bill-wave fa-lg filter_icons flex_center"></i></div><!--.filter_icons--><!--fa-lg pour zoomer sur l'icône-->
+                        <div class="filter_icons flex_center"><i class="fa fa-money-bill-wave fa-lg"></i></div><!--.filter_icons--><!--fa-lg pour zoomer sur l'icône-->
                         <div class="filter_text"><h3>Economique</h3></div><!--.filter_text-->
                     </div>
                     <div class="filter_text_icons flex_between">
-                        <div><i class="fa fa-child fa-lg filter_icons flex_center"></i></div>
+                        <div  class="filter_icons flex_center"><i class="fa fa-child fa-lg"></i></div>
                         <div class="filter_text"><h3>Familial</h3></div>
                     </div>    
                     <div class="filter_text_icons flex_between">
-                        <div><i class="fa fa-heart fa-lg filter_icons flex_center"></i></div>
+                        <div class="filter_icons flex_center"><i class="fa fa-heart fa-lg"></i></div>
                         <div class="filter_text"><h3>Romantique</h3></div>
                     </div>    
                     <div class="filter_text_icons flex_between">
-                        <div><i class="fa fa-dog fa-lg filter_icons flex_center"></i></div>
-                        <div class="filter_text flex_center"><h3>Animaux autorisés</h3></div>
+                        <div  class="filter_icons flex_center"><i class="fa fa-dog fa-lg"></i></div>
+                        <div class="filter_text"><h3>Animaux autorisés</h3></div>
                     </div>    
                 </div>
             </div>
 
             <div class ="information_section margin_information">
-                <i class="fas fa-info fa-sm information_icon flex_center"></i>
+                <div class="information_icon flex_center"><i class="fas fa-info fa-sm "></i></div> 
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
 
 
+            <!--Sections 1 et 2-->
+            <div id="sections_12">                 
+                <!-- Section 1 Hébergement à Marseille -->
+                <section id="section_1">
+                    <div><h2>Hébergements à Marseille</h2></div>
+
+                    <article class="cards">
+                        <div class="card_1">
+                            <div class="img_card_1"> <!--? Utiliser <figure> ?-->
+                                <img 
+                                src="images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" 
+                                alt="Auberge La Cannebière"
+                                width="95%" /> <!-- ? Pourquoi c'est 20 % de moins de la largeur de la page ?-->
+                                <figcaption><h4>Auberge La Cannebière</h4></figcaption>                            
+                            </div>
+                            <div>
+                                <p>
+                                Nuit à partir de 25€
+                                </p>
+                            </div>
+                            <div>
+                                <!--Etoiles bleues et grises-->
+                            </div>    
+                        </div>
+                    </article>
+                    
+
+
+
+
+
+                </section>
 
 
 
 
 
 
+                <!-- Section 2 Les plus populaires -->
+                <section id="section_2">
+            
+                </section>
+            
+            
+            
+            
+            
+            
+            
+            </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <!-- Section 1 Hébergement à Marseille -->
-            <section id="section_1_rent"><!--or id="section_1"-->
-            </section>
-
-            <!-- Section 2 Les plus populaires -->
-            <section id="section_2_popular"><!--or id="section_2"-->
-            </section>
-
+        
             <!-- Section 3 Activités à Marseille -->
-            <section id="section_3_activities"><!--or id="section_3"-->
+            <section id="section_3">
             </section>
 
-        </main>
+        </main><!-- Margins left right 25px-->
 
         <!-- Footer -->
         <footer>
         </footer>
 
-    </div>
+    </div> <!--#bloc_page-->
 </body>
 </html>

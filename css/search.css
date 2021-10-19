@@ -4,11 +4,11 @@ form {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 2em; 
+  margin-top: 2em; /* Margins top bottom manuelles */
   margin-bottom: 2em;
 }
 
-.icon_map {
+.map_icon {
   padding: 11px 13px;
   background-color: #f2f2f2;
   border-radius: 10px 0 0 10px; 
@@ -18,11 +18,14 @@ form div input {
   padding-left: 10px;
 }
 
-#button_desktop { /* Changer de nom pour .search_button */
+#search_button {
   border-radius: 0 10px 10px 0; 
   background-color: #0065FC;
   border: solid #0065FC;
   color: white;
+
+  border: solid red;
+
 }
 
 #recherche { /* Changer de nom pour #search_field */
@@ -40,23 +43,26 @@ form div input {
 
 @media screen and (max-width: 768px) { /* Mobile */
   
-  #button_desktop {
+  #search_button {
     display: none; 
   }
 
   #search_mobile {
     display: inline-block;
-    margin-right: 30%; /* Ne fonctionne pas */
+    
   }
   
+  #search_button_mobile {
+    padding-left: -5%;
+  }
+
   button { /* ! Firefox mobile : le bouton va à la ligne ! J'ai enlevé la position absolute */  /* Changer de nom */
     height: 40px;
     width: 40px;
     border-radius: 10px; 
     background-color: #0065FC;
     border: solid #0065FC;
-    color: white;
-
+    color: red;
   }
 
   form p {

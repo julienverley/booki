@@ -59,6 +59,12 @@
 
 /* Main elements */
 
+.margin_between_sections {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+
 main {
   margin-left: 25px;
   margin-right: 25px;
