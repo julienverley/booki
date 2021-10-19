@@ -87,7 +87,7 @@ p {
 }
 
 h1 {
-  font-weight: 600;/* ? Impossible de faire plus gras ? C'est normalize.css ? */
+font-weight: 600;/* Il fallait télécharger la font  */
 }
 
 h2 {
@@ -96,6 +96,10 @@ h2 {
 
 h3 {
   font-size: 1.1em;
+}
+
+h4 {
+  font-size: 0.9em;
 }
 
 

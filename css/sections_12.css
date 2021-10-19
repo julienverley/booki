@@ -1,28 +1,74 @@
 /* Sections_12 */
 
 .sections_12 {
-    display: flex; 
+    display: flex; /* flex-wrap: wrap pour la tablet */
     width: 100%;
+    border: pink solid 5px; 
+}
+
+.sections_12_title_margin {
+    margin-left: 2%;
 }
 
 .section_1 {
+    width: 65%;
     background-color: #f2F2F2; 
+    border: solid yellow;
+}
+
+.section_2 {
+    width: 30%;
+    background-color: grey;
+    border: solid black;
+}
+
+.cards_s12 { /* Propriétés communes aux cards sections 1 et 2 */
+    margin-left: 2%; 
+    background-color:white;
+    border-radius: 25px;
+    
 }
 
 .cards_s1 {
-    width: 20%;
+    width: 30%;
     display: flex; 
-    flex-direction: column;
-    border: red solid;
-    background-color:white;
-    border-radius: 25px;
+    flex-direction: column; /* ? */
+    border: blue solid;
+    padding-bottom: 1%;
+}
+
+.text_cards_s1 {
+    margin-left: 5%;
+}
+
+.img_cards_s1 img {
+    border: yellowgreen solid;
+    border-radius: 25px 25px 0 0; 
+    align-items: center; 
+    object-fit: center; /* ? Pas nécessaire en desktop, mais probablement en mobile ? */ 
+}
+
+.cards_s2 {
 
 }
 
+.text_cards_s2 {
 
+}
 
+.img_cards_s2 img {
+   
+}
 
-.img_card_s1 {
-    border: green solid;
-    border-radius: 25px; 
+.stars {
+    display: flex;
+    margin-left: 5%; 
+}
+
+.blue_stars {
+    color: #0065FC;
+}
+
+.grey_stars {
+    color: #DEEBFF;
 }

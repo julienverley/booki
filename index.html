@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/header.css"/> 
     <link rel="stylesheet" href="css/search.css"/> 
     <link rel="stylesheet" href="css/filters.css"/> 
-    <link rel="stylesheet" href="css/sections.css"/> 
+    <link rel="stylesheet" href="css/sections_12.css"/> 
     <link rel = 'stylesheet' href = 'css/normalize.css'> <!-- normalize.css-->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"><!--Police Raleway de Google Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet"><!--Weight 600 Police Raleway de Google Font-->
@@ -77,7 +77,7 @@
             <!-- Filters !-->
             <div class="filter_section .margin_between_sections" {
                 "><!--.filter_section-->
-                <div class="margin_filter_title flex_center"><h3>Filtres</h3><!--Mot Filtres sans icône-->
+                <div class="filter_title_margin flex_center"><h3>Filtres</h3><!--Mot Filtres sans icône-->
                 </div> 
                 <div class="filter"><!--.filter--> 
                     <div class="filter_text_icons flex_between"><!--.filter_text_icons-->
@@ -109,29 +109,39 @@
             <div class="sections_12">                 
                 <!-- Section 1 Hébergement à Marseille -->
                 <section class="section_1">
-                    <div><h2>Hébergements à Marseille</h2></div>
+                    <div class="sections_12_title_margin"><h2>Hébergements à Marseille</h2></div>
 
 
 
 
 
-                    <article class="cards_s1">
-                        <div class="img_card_s1"> <!--? Utiliser <figure> ?-->
+                    <article class="cards_s1 cards_s12">
+                        
+                        <div class="img_cards_s1"><!--Image ? Utiliser <figure> ?-->
                             <img 
                             src="images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" 
                             alt="Auberge La Cannebière"
-                            width="95%"
+                            width="100%"
                             />  <!-- ? Pourquoi c'est 20 % de moins de la largeur de la page ?-->
-                        <div>
-
+                        </div>
+                       
+                        <div><!--Texte-->
+                            <div class="text_cards_s1">
                             <figcaption><h4>Auberge La Cannebière</h4></figcaption>                            
                             <p>
                             Nuit à partir de 25€
                             </p>
+                            </div>
                         </div>
-                        <div>
-                            <!--Etoiles bleues et grises-->
-                        </div>    
+                       
+                        <div class="stars"><!--Etoiles-->
+                            <div><i class="fas fa-star fa-xs blue_stars"></i></div>
+                            <div><i class="fas fa-star fa-xs blue_stars"></i></div>
+                            <div><i class="fas fa-star fa-xs blue_stars"></i></div>    
+                            <div><i class="fas fa-star fa-xs blue_stars"></i></div>
+                            <div><i class="fas fa-star fa-xs grey_stars"></i></div>
+                        </div>   
+
                     </article>
                     
 
@@ -148,7 +158,7 @@
 
                 <!-- Section 2 Les plus populaires -->
                 <section class="section_2">
-            
+                    <div><h2>Les plus populaires</h2></div>
                 </section>
             
             
