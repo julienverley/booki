@@ -31,12 +31,12 @@
                             height="45px"
                         />
                     </div>
-                    <div id="header_link" class="flex_around size_links">
-                        <div class="size_link border_link flex_center">
-                            <a class="decoration_none" href="#">Hébergements</a>
+                    <div id="header_link" class="flex_around size_links"><!--? ul et li ?-->
+                        <div class="header_text size_link border_link flex_center">
+                            <a class="decoration_none" href="#">Hébergements</a><!-- A faire : lien vers Section Hébergements-->
                         </div>
-                        <div class="size_link border_link flex_center">
-                            <a class="decoration_none" href="#">Activités</a>
+                        <div class="header_text size_link border_link flex_center">
+                            <a class="decoration_none" href="#">Activités</a><!-- A faire : lien vers Section Activités-->
                         </div>
                     </div>
                 </div>
@@ -105,60 +105,99 @@
             </div>
 
 
+
+
+
+
             <!--Sections 1 et 2-->
             <div class="sections_12">                 
                 <!-- Section 1 Hébergement à Marseille -->
                 <section class="section_1">
-                    <div class="sections_12_title_margin"><h2>Hébergements à Marseille</h2></div>
-
-
-
-
-
+                    <div class="title_s1">
+                        <h2>
+                            Hébergements à Marseille
+                        </h2>
+                    </div>
+                    
+                    
+                    
                     <article class="cards_s1 cards_s12">
-                        
-                        <div class="img_cards_s1"><!--Image ? Utiliser <figure> ?-->
+                        <div class="img_cards_s1"><!--Image--><!--Image à découper en hauteur-->
                             <img 
                             src="images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" 
                             alt="Auberge La Cannebière"
-                            width="100%"
+                            style="width:100%"
                             />  <!-- ? Pourquoi c'est 20 % de moins de la largeur de la page ?-->
                         </div>
-                       
-                        <div><!--Texte-->
-                            <div class="text_cards_s1">
-                            <figcaption><h4>Auberge La Cannebière</h4></figcaption>                            
+                        <div class="body_cards_s1"><!--Texte-->
+                            <figcaption>
+                                <h4>
+                                    Auberge La Cannebière
+                                </h4>
+                            </figcaption>                            
                             <p>
                             Nuit à partir de 25€
-                            </p>
-                            </div>
+                            </p>   
                         </div>
-                       
-                        <div class="stars"><!--Etoiles-->
+                        <div class="stars_s1"><!--Etoiles-->
                             <div><i class="fas fa-star fa-xs blue_stars"></i></div>
                             <div><i class="fas fa-star fa-xs blue_stars"></i></div>
                             <div><i class="fas fa-star fa-xs blue_stars"></i></div>    
                             <div><i class="fas fa-star fa-xs blue_stars"></i></div>
                             <div><i class="fas fa-star fa-xs grey_stars"></i></div>
                         </div>   
-
                     </article>
                     
-
-
-
-
-
+                    
                 </section>
 
-
-
-
-
-
                 <!-- Section 2 Les plus populaires -->
-                <section class="section_2">
-                    <div><h2>Les plus populaires</h2></div>
+                <section class="section_2 ">
+
+                    <div class="title_icon_s2 flex_between"><!--Titre & icône-->
+                        <div><h2>Les plus populaires</h2></div><!--Titre-->
+                        <div><i class="fas fa-chart-line fa-lg"></i></div><!--Icône-->
+                    </div>
+                    
+                    <div class="all_cards_s2"><!--Cards (1 card = 1 article)-->
+                        <article class="cards_s2 cards_s12">
+    
+                            <div class="img_cards_s2"><!--Image--><!--Image à découper en hauteur-->
+                                <img 
+                                src="images/populaires/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" 
+                                alt="Auberge La Cannebière"
+                                style="width: 100%;" 
+                                />  <!-- ? Pourquoi c'est 20 % de moins de la largeur de la page ?--><!--? 100% de quoi ?-->
+                            </div>
+                            
+                            <div class="body_cards_s2">
+
+                                <div class="text_cards_s2"><!--Texte-->
+                                    <figcaption>
+                                        <h4>
+                                            Hôtel Le soleil du matin
+                                        </h4>
+                                    </figcaption>                            
+                                    <p>
+                                    Nuit à partir de 128€
+                                    </p>   
+                                </div>
+                                
+                                <div class="stars_s2"><!--Etoiles-->
+                                        <div><i class="fas fa-star fa-xs blue_stars"></i></div>
+                                        <div><i class="fas fa-star fa-xs blue_stars"></i></div>
+                                        <div><i class="fas fa-star fa-xs blue_stars"></i></div>    
+                                        <div><i class="fas fa-star fa-xs blue_stars"></i></div>
+                                        <div><i class="fas fa-star fa-xs blue_stars"></i></div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+
+
+
+
                 </section>
             
             

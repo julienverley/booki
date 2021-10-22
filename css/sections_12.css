@@ -6,27 +6,40 @@
     border: pink solid 5px; 
 }
 
-.sections_12_title_margin {
-    margin-left: 2%;
-}
-
-.section_1 {
-    width: 65%;
-    background-color: #f2F2F2; 
-    border: solid yellow;
-}
-
-.section_2 {
-    width: 30%;
-    background-color: grey;
-    border: solid black;
-}
 
 .cards_s12 { /* Propriétés communes aux cards sections 1 et 2 */
     margin-left: 2%; 
     background-color:white;
     border-radius: 25px;
-    
+}
+
+figcaption h4 { /* h4 Auberge la Cannebière */
+    margin-top: 1%;
+    margin-bottom: 1%; 
+
+}
+
+.blue_stars {
+    color: #0065FC;
+}
+
+.grey_stars {
+    color: #DEEBFF;
+}
+
+
+/* Section 1 */
+
+.section_1 {
+    width: 65%;
+    background-color: #f2F2F2; 
+    border: solid yellow;
+    border-radius: 25px; 
+}
+
+.title_s1 {
+    margin-left: 2%;
+    margin-top: 3%;
 }
 
 .cards_s1 {
@@ -37,38 +50,117 @@
     padding-bottom: 1%;
 }
 
-.text_cards_s1 {
+.body_cards_s1 {
     margin-left: 5%;
 }
 
-.img_cards_s1 img {
+.body_cards_s1 p { /* Nuit à partir de 25 € */
+    margin-top: 2%;
+    margin-bottom: 2%; 
+}
+
+.img_cards_s1 img { 
     border: yellowgreen solid;
     border-radius: 25px 25px 0 0; 
     align-items: center; 
-    object-fit: center; /* ? Pas nécessaire en desktop, mais probablement en mobile ? */ 
+    object-fit: cover; /* ?? */ 
+    
 }
 
-.cards_s2 {
-
-}
-
-.text_cards_s2 {
-
-}
-
-.img_cards_s2 img {
-   
-}
-
-.stars {
+.stars_s1 {
     display: flex;
     margin-left: 5%; 
 }
 
-.blue_stars {
-    color: #0065FC;
+
+/* Section 2 */
+
+.section_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    background-color: #f2F2F2;
+    border: solid black;
+    border-radius: 25px; 
+
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
-.grey_stars {
-    color: #DEEBFF;
+.title_icon_s2 {
+    display: flex;
+    justify-content: space-between; /* ? Pourquoi ça ne fonctionne pas ? */
+    align-items:center;
+    width: 100%;
 }
+
+.all_cards_s2 {
+    display: flex;
+    align-items: center;
+}
+
+.cards_s2 {
+    width: 100%;
+    display: flex; 
+
+    border: purple solid;
+}
+
+.body_cards_s2 {
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 5%; 
+}
+
+.text_cards_s2 h4{
+    margin-top: 6%; 
+}
+
+.text_cards_s2 p {
+    margin-top: 5%; 
+}
+
+.img_cards_s2 { /* Comment "fixer" l'image  ? */ 
+    width: 35%; /* ? Est-ce bien utile ? Sinon, un height en px ? */ 
+    height: 160px;
+    background-size: cover;
+    
+    border: yellowgreen solid;
+    border-radius: 25px 0 0 25px; 
+    object-fit: none; /* ? */ 
+
+}
+
+
+.stars_s2 {
+    display: flex;
+    margin-left: 0%; 
+    margin-bottom: 3%;
+}
+
+
+/* Hover */
+
+.text_cards_s1:hover { /* ? Pourquoi un hover seulement sur le texte ? */
+    color:  #0065FC;
+  }
+
+.text_cards_s2:hover { /* ? Pourquoi un hover seulement sur le texte ? */
+    color:  #0065FC;
+  }
+
+
+/* Media queries */
+
+@media screen and (max-width: 992px) {
+    .sections_12 {
+        flex-direction: column-reverse;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
