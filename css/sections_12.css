@@ -30,7 +30,7 @@ figcaption h4 { /* h4 Auberge la Cannebière */
 
 /* Section 1 */
 
-.section_1 {
+.section_1_hebergements {
     width: 65%;
     background-color: #f2F2F2; 
     border: solid yellow;
@@ -42,6 +42,18 @@ figcaption h4 { /* h4 Auberge la Cannebière */
     margin-top: 3%;
 }
 
+.all_cards_s1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-between;
+    margin-bottom: 5%;
+}
+
+.cards_s1_123 { /* Cartes 1 et 2 */
+    margin-bottom: 2%;
+}
+
 .cards_s1 {
     width: 30%;
     display: flex; 
@@ -50,11 +62,11 @@ figcaption h4 { /* h4 Auberge la Cannebière */
     padding-bottom: 1%;
 }
 
-.body_cards_s1 {
+.text_cards_s1 {
     margin-left: 5%;
 }
 
-.body_cards_s1 p { /* Nuit à partir de 25 € */
+.text_cards_s1 p { /* Nuit à partir de 25 € */
     margin-top: 2%;
     margin-bottom: 2%; 
 }
@@ -64,7 +76,6 @@ figcaption h4 { /* h4 Auberge la Cannebière */
     border-radius: 25px 25px 0 0; 
     align-items: center; 
     object-fit: cover; /* ?? */ 
-    
 }
 
 .stars_s1 {
@@ -72,10 +83,14 @@ figcaption h4 { /* h4 Auberge la Cannebière */
     margin-left: 5%; 
 }
 
+.afficher_plus {
+    margin-left: 3%;
+}
+
 
 /* Section 2 */
 
-.section_2 {
+.section_2_populaires {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,7 +104,7 @@ figcaption h4 { /* h4 Auberge la Cannebière */
 
 .title_icon_s2 {
     display: flex;
-    justify-content: space-between; /* ? Pourquoi ça ne fonctionne pas ? */
+    justify-content: space-between;
     align-items:center;
     width: 100%;
 }
@@ -161,10 +176,60 @@ figcaption h4 { /* h4 Auberge la Cannebière */
 /* Media queries */
 
 @media screen and (max-width: 992px) {
-    .sections_12 {
-        flex-direction: column-reverse;
-    }
+   
 }
 
 @media screen and (max-width: 768px) {
 
+    
+
+    .sections_12 {
+        flex-direction: column-reverse;
+        margin: 0 -5% 0 -5%; /* margin à gauche seulement */ 
+        
+    }
+    
+    
+    .section_2_populaires {
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+        border-radius: none;
+    }
+
+    .cards_s2 {
+        width: 96%;
+    }
+
+
+    .all_cards_s2 {
+        width: 100%;
+        margin: 0; 
+        border-radius: none;
+    }
+
+    .img_cards_s2 img {
+        width: 40%; /* Ne fonctionne pas */
+    }
+
+    .section_1_hebergements {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .all_cards_s1 {
+    }
+
+    .cards_s1 { /* A centrer */
+        flex-direction: column;
+        width: 96%; /* Pb : il y a plus de marge que s2 */
+    }
+
+    .img_cards_s1 img {
+        width: 100%; /* ? Est-ce bien utile ? Sinon, un height en px ? */ 
+        height: 150px;
+        object-fit: cover;
+    }
+
+    
+}
