@@ -185,7 +185,7 @@ figcaption h4 { /* h4 Auberge la Cannebière */
 
     .sections_12 {
         flex-direction: column-reverse;
-        margin: 0 -5% 0 -5%; /* margin à gauche seulement */ 
+        margin: 0; /* margin à gauche seulement */ 
         
     }
     

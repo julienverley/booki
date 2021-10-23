@@ -57,6 +57,10 @@
   color: #DEEBFF; 
 }
 
+.container {
+  margin: 0 3% 0 3%;
+}
+
 
 /* Main elements */
 
@@ -65,18 +69,19 @@
   margin-bottom: 2em;
 }
 
-
-main {
-  margin-left: 25px;
-  margin-right: 25px;
+#bloc_page {
 }
 
-#bloc_page {
-  margin-left: 0;
+main {
+  margin: 0;
 }
 
 body {
   font-family: raleway, sans-serif;
+}
+
+ul {
+  padding-inline-start: 0px;
 }
 
 li {
@@ -111,6 +116,6 @@ h4 {
 
 @media screen and (max-width: 768px) { 
   main {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0;
+  }
 }

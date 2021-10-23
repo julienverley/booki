@@ -101,4 +101,8 @@
     flex-direction: column;
     align-items:flex-start; 
   }  
+
+  .filter_text_icons {
+    margin-right: 5%;
+  }
 }

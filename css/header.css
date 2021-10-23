@@ -79,7 +79,7 @@ a {
     height: 50px;
   }
 
-  #header_link {
+  #header_links {
     display: flex; 
     flex-direction: row;
     justify-content: space-between;
