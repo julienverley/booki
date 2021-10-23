@@ -1,9 +1,10 @@
 /* Sections_12 */
 
 .sections_12 {
-    display: flex; /* flex-wrap: wrap pour la tablet */
+    display: flex; /* flex-wrap: wrap pour tablet */
+    justify-content: center;
+    justify-content: space-around;
     width: 100%;
-    border: pink solid 5px; 
 }
 
 
@@ -28,13 +29,13 @@ figcaption h4 { /* h4 Auberge la Cannebière */
 }
 
 
-/* Section 1 */
+/* Section 1 Hébergements */
 
 .section_1_hebergements {
     width: 65%;
     background-color: #f2F2F2; 
-    border: solid yellow;
     border-radius: 25px; 
+    
 }
 
 .title_s1 {
@@ -42,53 +43,55 @@ figcaption h4 { /* h4 Auberge la Cannebière */
     margin-top: 3%;
 }
 
-.all_cards_s1 {
+.all_cards_s1 { /* apply to the parent of all cards of the section */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     align-content: space-between;
-    margin-bottom: 5%;
-}
-
-.cards_s1_123 { /* Cartes 1 et 2 */
     margin-bottom: 2%;
 }
 
-.cards_s1 {
+.cards_s1 { /* Apply to each individual cards */ 
     width: 30%;
     display: flex; 
     flex-direction: column; /* ? */
-    border: blue solid;
     padding-bottom: 1%;
+    margin-bottom: 5%; 
+    box-shadow: 1px 1px 8px 2px lightgray;
 }
 
 .text_cards_s1 {
     margin-left: 5%;
 }
 
+.text_cards_s1 figcaption h4 {
+    margin-top: 4%; 
+}
+
 .text_cards_s1 p { /* Nuit à partir de 25 € */
-    margin-top: 2%;
-    margin-bottom: 2%; 
+    margin-top: 4%;
+    margin-bottom: 4%; 
 }
 
 .img_cards_s1 img { 
-    border: yellowgreen solid;
+    width: 100%;
+    height: 110px;
     border-radius: 25px 25px 0 0; 
     align-items: center; 
-    object-fit: cover; /* ?? */ 
+    object-fit: cover;
 }
 
 .stars_s1 {
     display: flex;
-    margin-left: 5%; 
+    margin: 0 0 1% 5%;
 }
 
 .afficher_plus {
-    margin-left: 3%;
+    margin: -4% 0 4% 3%;
 }
 
 
-/* Section 2 */
+/* Section 2 Populaires */
 
 .section_2_populaires {
     display: flex;
@@ -96,7 +99,6 @@ figcaption h4 { /* h4 Auberge la Cannebière */
     align-items: center;
     width: 30%;
     background-color: #f2F2F2;
-    border: solid black;
     border-radius: 25px; 
     padding-left: 2%;
     padding-right: 2%;
@@ -109,21 +111,21 @@ figcaption h4 { /* h4 Auberge la Cannebière */
     width: 100%;
 }
 
-.all_cards_s2 {
+.all_cards_s2 { /* apply to the parent of all cards of the section */
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 5%;
 }
 
-.cards_s2 {
+.cards_s2 { /* Apply to each individual cards */
     width: 100%;
     display: flex; 
-    border: purple solid;
+    margin-bottom: 10%;
+    box-shadow: 1px 1px 8px 2px lightgray;
 }
 
-.cards_s2_12 { /* Cartes 1 et 2 */
-    margin-bottom: 5%;
+.cards_s2_12 { /* Cartes 1 et 2 : j'avais fait des bottoms spécifiques */
 }
 
 .body_cards_s2 {
@@ -135,13 +137,12 @@ figcaption h4 { /* h4 Auberge la Cannebière */
 }
 
 .img_cards_s2 { /* Comment "fixer" l'image  ? */ 
-    border: yellowgreen solid;
     border-radius: 25px 0 0 25px; 
 }
 
 .img_cards_s2 img {
-    width: 75%; /* ? Est-ce bien utile ? Sinon, un height en px ? */ 
-    height: 150px;
+    width: 75%; 
+    height: 100%; /* J'avais mis 150px, il restait une bande blanche en bas */  
     object-fit: cover;
     border-radius: 25px 0 0 25px; 
 }
@@ -182,25 +183,27 @@ figcaption h4 { /* h4 Auberge la Cannebière */
 @media screen and (max-width: 768px) {
 
     
-
     .sections_12 {
         flex-direction: column-reverse;
-        margin: 0; /* margin à gauche seulement */ 
-        
+        justify-content: space-between ; /* Ne fonctionne pas, => margin-bottom sur section_2_populaires */
     }
     
-    
+    .section_1_hebergements {
+        border-radius: 0;
+        background-color: white;
+    }
+
+
     .section_2_populaires {
         flex-direction: column;
         margin: 0;
         width: 100%;
-        border-radius: none;
+        border-radius: 0;
     }
 
     .cards_s2 {
         width: 96%;
     }
-
 
     .all_cards_s2 {
         width: 100%;

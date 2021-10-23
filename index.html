@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/search.css"/> 
     <link rel="stylesheet" href="css/filters.css"/> 
     <link rel="stylesheet" href="css/sections_12.css"/> 
+    <link rel="stylesheet" href="css/section_3.css"/> 
+    <link rel="stylesheet" href="css/footer.css"/> 
     <link rel = 'stylesheet' href = 'css/normalize.css'> <!-- normalize.css-->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"><!--Police Raleway de Google Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet"><!--Weight 600 Police Raleway de Google Font-->
@@ -33,10 +35,10 @@
                     </div><!--Links-->
                     <ul id="header_links" class="flex_around size_links"><!--? ul et li ?-->
                         <li class="header_text size_link border_link flex_center">
-                            <a class="decoration_none" href="#">Hébergements</a><!-- A faire : lien vers Section Hébergements-->
+                            <a class="decoration_none" href="#hebergements">Hébergements</a>
                         </li>
                         <li class="header_text size_link border_link flex_center">
-                            <a class="decoration_none" href="#">Activités</a><!-- A faire : lien vers Section Activités-->
+                            <a class="decoration_none" href="#activites">Activités</a>
                         </li>
                     </ul>
                 </div>
@@ -112,20 +114,20 @@
                 <!-- Section 1 Hébergement à Marseille -->
                 <section class="section_1_hebergements">
                     <div class="title_s1">
-                        <h2>
+                        <h2 id="hebergements">
                             Hébergements à Marseille
                         </h2>
                     </div>
                     
                     <div class="all_cards_s1">
 
-                        <article class="cards_s1 cards_s12 cards_s1_123"><!--Card 1-->
-                            <div class="img_cards_s1"><!--Image--><!--Image à découper en hauteur-->
+                        <article class="cards_s1 cards_s12"><!--Card 1-->
+                            <div class="img_cards_s1"><!--Image--><!--J'utiliserai srcset (responsive images) pour une prochain projet, avec de larges images -->
                                 <img 
-                                src="images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" 
+                                src="images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                                 alt="Auberge La Cannebière"
                                 style="width:100%"
-                                />  <!-- ? Pourquoi c'est 20 % de moins de la largeur de la page ?-->
+                                /> 
                             </div>
                             <div class="text_cards_s1"><!--Texte-->
                                 <figcaption>
@@ -146,13 +148,13 @@
                             </div>   
                         </article>
 
-                        <article class="cards_s1 cards_s12 cards_s1_123"><!--Card 2-->
-                            <div class="img_cards_s1"><!--Image--><!--Image à découper en hauteur-->
+                        <article class="cards_s1 cards_s12"><!--Card 2-->
+                            <div class="img_cards_s1"><!--Image-->
                                 <img 
                                 src="images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" 
                                 alt="Auberge La Cannebière"
                                 style="width:100%"
-                                />  <!-- ? Pourquoi c'est 20 % de moins de la largeur de la page ?-->
+                                /> 
                             </div>
                             <div class="text_cards_s1"><!--Texte-->
                                 <figcaption>
@@ -173,13 +175,13 @@
                             </div>   
                         </article>
                         
-                        <article class="cards_s1 cards_s12 cards_s1_123"><!--Card 3-->
-                            <div class="img_cards_s1"><!--Image--><!--Image à découper en hauteur-->
+                        <article class="cards_s1 cards_s12"><!--Card 3-->
+                            <div class="img_cards_s1"><!--Image-->
                                 <img 
                                 src="images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" 
                                 alt="Auberge La Cannebière"
                                 style="width:100%"
-                                />  <!-- ? Pourquoi c'est 20 % de moins de la largeur de la page ?-->
+                                />
                             </div>
                             <div class="text_cards_s1"><!--Texte-->
                                 <figcaption>
@@ -201,12 +203,12 @@
                         </article>
 
                         <article class="cards_s1 cards_s12"><!--Card 4-->
-                            <div class="img_cards_s1"><!--Image--><!--Image à découper en hauteur-->
+                            <div class="img_cards_s1"><!--Image-->
                                 <img 
                                 src="images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" 
                                 alt="Auberge La Cannebière"
                                 style="width:100%"
-                                />  <!-- ? Pourquoi c'est 20 % de moins de la largeur de la page ?-->
+                                />
                             </div>
                             <div class="text_cards_s1"><!--Texte-->
                                 <figcaption>
@@ -228,12 +230,12 @@
                         </article>
 
                         <article class="cards_s1 cards_s12"><!--Card 5-->
-                            <div class="img_cards_s1"><!--Image--><!--Image à découper en hauteur-->
+                            <div class="img_cards_s1"><!--Image-->
                                 <img 
                                 src="images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" 
                                 alt="Auberge La Cannebière"
                                 style="width:100%"
-                                />  <!-- ? Pourquoi c'est 20 % de moins de la largeur de la page ?-->
+                                /> 
                             </div>
                             <div class="text_cards_s1"><!--Texte-->
                                 <figcaption>
@@ -255,12 +257,12 @@
                         </article>
 
                         <article class="cards_s1 cards_s12"><!--Card 6-->
-                            <div class="img_cards_s1"><!--Image--><!--Image à découper en hauteur-->
+                            <div class="img_cards_s1"><!--Image-->
                                 <img 
                                 src="images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" 
                                 alt="Auberge La Cannebière"
                                 style="width:100%"
-                                />  <!-- ? Pourquoi c'est 20 % de moins de la largeur de la page ?-->
+                                />
                             </div>
                             <div class="text_cards_s1"><!--Texte-->
                                 <figcaption>
@@ -296,20 +298,22 @@
 
                     <div class="title_icon_s2 flex_between"><!--Titre & icône-->
                         <div><!--Titre-->
-                            <h2>Les plus populaires</h2>
+                            <h2>
+                                Les plus populaires
+                            </h2>
                         </div>
                         <div><i class="fas fa-chart-line fa-lg"></i></div><!--Icône-->
                     </div>
                     
                     <div class="all_cards_s2"><!--Cards (1 card = 1 article)-->
                         
-                        <article class="cards_s2 cards_s12 cards_s2_12"><!--Hôtel Le soleil-->
-                            <div class="img_cards_s2"><!--Image--><!--Image à découper en hauteur--><!--Augmenter la taille de l'image d'origine-->
+                        <article class="cards_s2 cards_s12"><!--Hôtel Le soleil-->
+                            <div class="img_cards_s2"><!--Image-->
                                 <img 
                                 src="images/populaires/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" 
                                 alt="Auberge La Cannebière"
-                                style="width: 100%;"
-                                />  <!-- ? Pourquoi c'est 20 % de moins de la largeur de la page ?--><!--? 100% de quoi ?-->
+                                style="width: 100%"
+                                />  
                             </div>
                             <div class="body_cards_s2">
                                 <div class="text_cards_s2"><!--Texte-->
@@ -332,12 +336,12 @@
                             </div>
                         </article>
 
-                        <article class="cards_s2 cards_s12 cards_s2_12">
-                            <div class="img_cards_s2"><!--Image--><!--Image à découper en hauteur--><!--Augmenter la taille de l'image d'origine-->
+                        <article class="cards_s2 cards_s12">
+                            <div class="img_cards_s2"><!--Image-->
                                 <img 
                                 src="images/populaires/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" 
                                 alt="Auberge La Cannebière"
-                                style="width: 100%;"
+                                style="width: 100%"
                                 />
                             </div>
                             <div class="body_cards_s2">
@@ -362,11 +366,11 @@
                         </article>
 
                         <article class="cards_s2 cards_s12">
-                            <div class="img_cards_s2"><!--Image--><!--Image à découper en hauteur--><!--Augmenter la taille de l'image d'origine-->
+                            <div class="img_cards_s2"><!--Image-->
                                 <img 
                                 src="images/populaires/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" 
                                 alt="Auberge La Cannebière"
-                                style="width: 100%;"
+                                style="width: 100%"
                                 />  
                             </div>
                             <div class="body_cards_s2">
@@ -396,8 +400,76 @@
 
         
             <!-- Section 3 Activités à Marseille -->
-            <section id="section_3">
-            </section>
+            <section class="section_3_activites">
+                <div class="title_s3">
+                    <h2 id="activites">
+                        Activités à Marseille
+                    </h2>
+                </div>
+    
+                <div class="all_cards_s3">
+                        
+                    <div class="column_card_x1"><!--column 1 (card x1)-->
+                        <article class="cards_s3">
+                            <div class="img_cards_s3"><!--Image-->
+                                <img 
+                                src="images/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" 
+                                alt="Vieux Port"
+                                style="width: 100%"
+                                />  
+                            </div>
+                            <div class="body_text_cards_s3"><!--Text-->
+                                <figcaption>
+                                    <h4>
+                                        Vieux Port
+                                    </h4>
+                                </figcaption>
+                            </div>
+                        </article>
+                    </div><!--column 1 (card x1)--> 
+
+                    <div class="column_cards_x2"><!--column 2 (cards x2)-->
+                       
+                        <article class="img_cards_x2_06">
+                            <div class="img_cards_s3"><!--Image-->
+                                <img 
+                                src="images/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg" 
+                                alt="Fort de Pomègues"
+                                style="width: 100%"
+                                />  
+                            </div>
+                            <div class="body_text_cards_s3"><!--Text-->
+                                <figcaption>
+                                    <h4>
+                                        Fort de Pomègues
+                                    </h4>
+                                </figcaption>
+                            </div>
+                        </article>
+
+                        <article class="img_cards_x2_04">
+                            <div class="img_cards_s3"><!--Image-->
+                                <img 
+                                src="images/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" 
+                                alt="Îles du Frioul"
+                                style="width: 100%"
+                                />  
+                            </div>
+                            <div class="body_text_cards_s3"><!--Text-->
+                                <figcaption>
+                                    <h4>
+                                        Îles du Frioul
+                                    </h4>
+                                </figcaption>
+                        </article>
+
+                    </div><!--column 2 (cards x2)-->
+                        
+                    
+
+                </div><!--all_cards_s3-->
+            </section><!--section_3_activités-->
+
 
         </main><!-- Margins left right 25px-->
 
@@ -405,6 +477,6 @@
         <footer>
         </footer>
 
-    </div> <!--#bloc_page-->
+    </div><!--#bloc_page-->
 </body>
 </html>

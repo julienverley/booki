@@ -23,9 +23,6 @@ form div input {
   background-color: #0065FC;
   border: solid #0065FC;
   color: white;
-
-  border: solid red;
-
 }
 
 #recherche { /* Changer de nom pour #search_field */
@@ -53,7 +50,7 @@ form div input {
   }
   
   #search_button_mobile {
-    padding-left: -5%;
+    margin-left: -15%;
   }
 
   button { /* ! Firefox mobile : le bouton va à la ligne ! J'ai enlevé la position absolute */  /* Changer de nom */
@@ -62,7 +59,7 @@ form div input {
     border-radius: 10px; 
     background-color: #0065FC;
     border: solid #0065FC;
-    color: red;
+    color: white;
   }
 
   form p {

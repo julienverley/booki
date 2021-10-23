@@ -69,9 +69,6 @@
   margin-bottom: 2em;
 }
 
-#bloc_page {
-}
-
 main {
   margin: 0;
 }
@@ -89,7 +86,7 @@ li {
 }
 
 p {
-  font-size:0.8em;
+  font-size: 0.8em;
 }
 
 h1 {
@@ -97,11 +94,11 @@ font-weight: 600;/* Il fallait télécharger la font  */
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 h3 {
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 h4 {

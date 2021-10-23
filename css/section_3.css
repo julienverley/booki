@@ -1,0 +1,61 @@
+/* Section_3 */
+
+.section_3_activites {
+    display: flex;
+    flex-direction: column;
+    border: solid blue; 
+    background-color: lightgray;
+}
+
+.all_cards_s3 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 450px;
+    border: solid yellow;
+}
+
+.column_card_x1 {
+    width: 21%;
+    border-radius: 25px; 
+    border: solid green;
+}
+
+.cards_s3 {
+    
+}
+
+.img_cards_s3 img {
+    height: 320px;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0; 
+    border: solid pink;
+} 
+
+.column_cards_x2 {
+    display: flex;
+    flex-direction: column;
+    width: 21%;
+    object-fit: cover;
+    height: 450px;
+}
+
+.img_cards_x2_04 {
+    border: solid black;
+}
+
+.img_cards_x2_04 img { /* Image hauteur 40% */
+    height: 100px; /* Ne fonctionne pas */ 
+    width: 100%;
+    object-fit: cover;
+}
+
+.img_cards_x2_06 {
+    border: solid grey;
+}
+
+.img_cards_x2_06 img { /* Image hauteur 60% */
+    height: 150px; /* Ne fonctionne pas */ 
+    width: 100%;
+    object-fit: cover;
+}
