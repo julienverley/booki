@@ -3,83 +3,91 @@
 .section_3_activites {
     display: flex;
     flex-direction: column;
-    border: solid blue; 
-    margin-top: 3%;
+    margin-top: 4%;
+
 }
 
 .title_s3 {
-    margin-left: 2.5%;
-    margin-bottom: ; /* -4% */
+    margin-left: 0;
+    margin-bottom: 0;
 }
 
 .all_cards_s3 {
     display: flex;
     flex-direction: row;
-    justify-content: space-around; 
+    justify-content: space-between; 
     width: 100%;
-    height: 340px; /* 450px ça allait bien */
-    border: solid yellow;
+    height: 350px; /* 450px ça allait bien */
+
 }
 
 .column_card_x1 {
-    width: 21%;
-    height: 340px; /* ? essais ? */ 
+    width: 23%; /* 21% */
+    height: 365px; /* ? 338px ? essais ? */ 
     border-radius: 25px; 
-    border: solid green;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
 }
 
 .cards_s3 {
     box-shadow: 1px 1px 8px 2px lightgray;
     border-radius: 25px; 
+    position: relative;
 }
 
-.img_cards_s3 img {
-    height: 300px; /* 320px mais peut être réduite */
+.img_cards_x1 {
+    
+}
+
+.img_cards_x1 img {
+    height: 320px; /* 284px ; 320px en premier mais peut être réduite */
     object-fit: cover;
     border-radius: 25px 25px 0 0; 
-    border: solid pink;
+
 } 
 
 .column_cards_x2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* space-evenly */ 
-    width: 21%;
+    width: 23%; /* 21% */
     object-fit: cover;
-    height: 340px;
-    border: solid red;
+    height: 365px;
+    border-radius: 25px; 
 }
 
 .img_cards_x2_04 {
-    border: solid black;
     margin-top: ; /* Pas de margin */
+    height: 100px;
 }
 
 .img_cards_x2_04 img { /* Image hauteur 40% */
-    height: 88px; /* 88px */ 
+    height: 100px; /* 88px */ 
     width: 100%;
+    border-radius: 25px 25px 0 0; 
     object-fit: cover;
-    
 }
 
 .img_cards_x2_06 {
-    border: solid grey;
+    height: 150px; 
     margin-top: ; /* Pas de margin */
 }
 
 .img_cards_x2_06 img { /* Image hauteur 60% */
-    height: 132px; /* 132px */ 
+    height: 150px; /* 132px */ 
     width: 100%;
+    border-radius: 25px 25px 0 0; 
     object-fit: cover;
 }
 
 .body_text_cards_s3 h4 {
-    margin-top: 5%;
-    margin-bottom: 5%;
+    height: 35px;
     margin-left: 5%;
+    padding-top: 4%;    
+    margin-bottom: 5px; 
+
 }
 
 
@@ -121,6 +129,6 @@
         margin-bottom: 5%;
     }
 
-    .img_cards_s3 img {
+    .img_cards_x1 img {
         height: 150px; 
     }
