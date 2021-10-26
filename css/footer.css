@@ -1,2 +1,52 @@
-/* Section_3 */
+/* Footer */
+
+
+.footer {
+    bottom: 0;
+    width: 100%;
+}
+
+.footer {
+    display: flex;   
+    flex-wrap: wrap; 
+    margin-top: 4%; 
+    padding-top: 2%; 
+    padding-bottom: 4%;
+    background-color: #F2F2F2;
+}
+
+.footer div {
+    margin-left: 2.5%;
+    margin-right: 20%;
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 992px) {
+   
+}
+
+
+@media screen and (max-width: 768px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        max-height: 100%;
+        padding-bottom: 780px;
+    }
+
+    body {
+        position: relative;
+    }
+
+    footer {
+        position: relative;
+        bottom: 0;
+        padding: 5% 0 5% 5%; 
+        background-color: #F2F2F2; 
+    }
+
+
 

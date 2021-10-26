@@ -4,7 +4,8 @@
     display: flex;
     flex-direction: column;
     margin-top: 4%;
-
+    height: 420px;
+    border: solid pink; 
 }
 
 .title_s3 {
@@ -110,10 +111,12 @@
     .all_cards_s3 {
         flex-direction: column;
         justify-content: space-between ;
+        
     }
     
     .section_3_activites {
-        width: 100%;
+        width: 90%;
+        margin-left: 5%;
     }
 
     .column_card_x1 {

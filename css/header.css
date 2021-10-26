@@ -12,7 +12,7 @@ a {
 }
 
 .size_nav {
-  height: 100px; 
+  height: 120px; 
 }
 
 .size_links {
@@ -20,8 +20,8 @@ a {
 }
 
 .size_link {
-  width: 150px;
-  height: 99px;
+  width: 150px; 
+  height: 79px; /* 99 */
 }
 
 .border_link { /* Si je le veux de manière permanente */
