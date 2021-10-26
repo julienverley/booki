@@ -2,10 +2,8 @@
 
 .sections_12 {
     display: flex; /* flex-wrap: wrap pour tablet */
-    justify-content: center;
     justify-content: space-between;
     width: 100%;
-    border: solid yellowgreen; 
 }
 
 
@@ -18,7 +16,6 @@
 figcaption h4 { /* h4 Auberge la Cannebière */
     margin-top: 1%;
     margin-bottom: 1%; 
-
 }
 
 .blue_stars {
@@ -33,11 +30,10 @@ figcaption h4 { /* h4 Auberge la Cannebière */
 /* Section 1 Hébergements */
 
 .section_1_hebergements {
-    width: 64%;
+    width: 62.5%;
     background-color: #f2F2F2; 
     border-radius: 25px; 
-    border: solid blue; 
-    
+    margin-left: 0%; /* Pb ? */ 
 }
 
 .title_s1 {
@@ -104,8 +100,7 @@ figcaption h4 { /* h4 Auberge la Cannebière */
     border-radius: 25px; 
     padding-left: 2%;
     padding-right: 2%;
-    margin-right: ;
-    border: solid pink; 
+    margin-right: 2.5%;
 }
 
 .title_icon_s2 {
@@ -124,6 +119,7 @@ figcaption h4 { /* h4 Auberge la Cannebière */
 
 .cards_s2 { /* Apply to each individual cards */
     width: 100%;
+    height: 140px;
     display: flex; 
     margin-bottom: 10%;
     box-shadow: 1px 1px 8px 2px lightgray;
@@ -144,13 +140,13 @@ figcaption h4 { /* h4 Auberge la Cannebière */
 .img_cards_s2 { /* Comment "fixer" l'image  ? */ 
     border-radius: 25px 0 0 25px; 
     width: 65%;
+    height: 100%;
 }
 
 .img_cards_s2 img {
-    height: 100px; /* 100% */
+    height: 100%; /* 100% */
     object-fit: cover;
     border-radius: 25px 0 0 25px; 
-    object-fit: cover; /* ? Pourquoi l'image ne prend pas toute la place dans img_cards_s2 ? */
 }
 
 
@@ -205,42 +201,19 @@ figcaption h4 { /* h4 Auberge la Cannebière */
         margin: 0;
     }
 
-
     .sections_12 {
         flex-direction: column-reverse;
         justify-content: space-between; /* Ne fonctionne pas, => margin-bottom sur section_2_populaires */
         margin: 0;
     }
     
+
+    /* Section 1 Hébergements */
     .section_1_hebergements {
         border-radius: 0;
         background-color: white;
-        padding-right: 2%;
+        padding: 0 2.5%;  
         width: 90%;
-        margin-left: 5%; 
-    }
-
-
-    .section_2_populaires {
-        flex-direction: column;
-        width: 90%;
-        margin-left: 5%; 
-        border-radius: 0;
-    }
-
-    .cards_s2 {
-        width: 96%;
-    }
-
-    .all_cards_s2 {
-        width: 100%;
-        margin: 0; 
-        border-radius: none;
-    }
-
-    .img_cards_s2 img {
-        width: 40%; /* Ne fonctionne pas */
-        
     }
 
     .section_1_hebergements {
@@ -262,5 +235,34 @@ figcaption h4 { /* h4 Auberge la Cannebière */
         object-fit: cover;
     }
 
+    /* Section 2 Populaires */
+    .section_2_populaires {
+        flex-direction: column;
+        width: 100%;
+        
+        padding: 0 2.5%;  
+        border-radius: 0;
+    }
+    
+    .title_icon_s2 {
+        padding: 0 2.5%;
+    }
+
+    .cards_s2 {
+        width: 96%;
+    }
+
+    .all_cards_s2 {
+        width: 100%;
+        margin: 0; 
+        border-radius: none;
+    }
+
+    .img_cards_s2 img {
+        width: 40%; /* Ne fonctionne pas */
+        
+    }
+
+    
     
 }

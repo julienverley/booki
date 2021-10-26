@@ -40,15 +40,27 @@ form div input {
 
 @media screen and (max-width: 768px) { /* Mobile */
   
+  .main_titles {
+    padding-left: 5%;
+  }
+
+  form {
+    padding-left: 5%;
+  }
+
   #search_button {
     display: none; 
   }
 
   #search_mobile {
-    display: inline-block;
-    
+    display: inline-block;    
   }
-  
+
+  #map_icon {
+    padding-left: 10%; 
+  }
+
+
   #search_button_mobile {
     margin-left: -15%;
   }

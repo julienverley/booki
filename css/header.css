@@ -15,6 +15,10 @@ a {
   height: 120px; 
 }
 
+#header_links {
+  margin-top: 0px;
+}
+
 .size_links {
   width: 30%; 
 }

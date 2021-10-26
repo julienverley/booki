@@ -4,17 +4,20 @@
 .filter_section {
   display: flex;
   flex-direction: row; 
+  margin: 2em 0;
 }
 
 .filter {
   display: flex; 
   flex-wrap: wrap;
   align-items: center;
-  width: 100%; /* ! Règle le problème de Animaux autorisés sur 2 lignes ! */
+  width: 90%; /* ! Règle le problème de Animaux autorisés sur 2 lignes ! */
+  padding-left: 4%;
 }
 
 .filter_title_margin {
-  margin-right: 5%;
+  margin-right: 4%;
+  padding-left: 3%; 
 }
 
 .filter_text_icons {
@@ -100,7 +103,13 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 3% 0 1.5%;
+    padding-left: 5%;
+    
 }
+
+  .filter_title_margin {
+    padding-left: 5%; 
+  }
 
   .filter_section {
     display: flex;
@@ -111,4 +120,9 @@
   .filter_text_icons {
     margin-right: 5%;
   }
+
+  .information_section {
+    padding-left: 2.5%; 
+  }
+
 }

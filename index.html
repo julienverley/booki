@@ -47,7 +47,7 @@
         <!-- Main -->
         <main> 
             <!-- Title (h1 & p) -->
-            <div class="container">
+            <div class="main_titles container">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p> 
             </div>
@@ -74,9 +74,12 @@
 
 
             <!-- Filters !-->
-            <div class="filter_section margin_between_sections container" {
+            <div class="filter_section container margin_between_sections" {
                 "><!--.filter_section-->
-                <div class="filter_title_margin flex_center"><h3>Filtres</h3><!--Mot Filtres sans icône-->
+                <div class="filter_title_margin flex_center">
+                    <h3><!--Mot Filtres sans icône-->
+                        Filtres
+                    </h3>
                 </div> 
                 <div class="filter"><!--.filter--> 
                     <div class="filter_text_icons flex_between"><!--.filter_text_icons-->
@@ -108,7 +111,7 @@
             <div class="sections_12">                 
                
                 <!-- Section 1 Hébergement à Marseille -->
-                <section class="section_1_hebergements container">
+                <section class="section_1_hebergements">
                     <div class="title_s1">
                         <h2 id="hebergements">
                             Hébergements à Marseille
@@ -290,7 +293,7 @@
 
 
                 <!-- Section 2 Les plus populaires -->
-                <section class="section_2_populaires container">
+                <section class="section_2_populaires">
 
                     <div class="title_icon_s2 flex_between"><!--Titre & icône-->
                         <div><!--Titre-->
@@ -403,37 +406,35 @@
                         </h2>
                     </div>
         
-                    <div class="all_cards_s3">
+                    <div class="all_cards_s3"><!--"bloc_activites"--> 
                             
-                        <div class="column_card_x1"><!--column 1 (card x1)-->
-                            <article class="cards_s3">
-                                <div class="img_cards_x1"><!--Image-->
-                                    <img 
-                                    src="images/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" 
-                                    alt="Vieux Port"
-                                    style="width: 100%"
-                                    />  
-                                </div>
-                                <div class="body_text_cards_s3"><!--Text-->
-                                    <figcaption>
-                                        <h4>
-                                            Vieux Port
-                                        </h4>
-                                    </figcaption>
-                                </div>
-                            </article>
-                        </div><!--column 1 (card x1)--> 
+                        <article class="cards_s3 column_card_x1"><!--column 1-->
+                            <div class="img_cards_x1 img_1"><!--Image-->
+                                <img 
+                                src="images/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" 
+                                alt="Vieux Port"
+                                style="width: 100%;"
+                                />  
+                            </div>
+                            <div class="text_cards_s3"><!--Text-->
+                                <figcaption>
+                                    <h4>
+                                        Vieux Port
+                                    </h4>
+                                </figcaption>
+                            </div>
+                        </article><!--column 1--> 
 
-                        <div class="column_cards_x2"><!--column 2 (cards x2)-->
-                            <article class="cards_s3">
-                                <div class="img_cards_x2_06"><!--Image-->
+                        <div class="column_cards_x2 cards_s3"><!-- ****** Problème vient de cette image ***** -->
+                            <article class=" "><!--column 2-->
+                                <div class="img_2 img_cards_x2_06"><!--Image-->
                                     <img 
                                     src="images/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg" 
                                     alt="Fort de Pomègues"
-                                    style="width: 100%"
+                                    style="width:100%"
                                     />  
                                 </div>
-                                <div class="body_text_cards_s3"><!--Text-->
+                                <div class="text_cards_s3"><!--Text-->                                        
                                     <figcaption>
                                         <h4>
                                             Fort de Pomègues
@@ -442,52 +443,50 @@
                                 </div>
                             </article>
 
-                            <article class="cards_s3">
-                                <div class="img_cards_x2_04"><!--Image-->
+                            <article class=" ">
+                                <div class="img_cards_x2_04 img_3"><!--Image-->
                                     <img 
                                     src="images/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" 
                                     alt="Îles du Frioul"
-                                    style="width: 100%"
+                                    style="width:100%"
                                     />  
                                 </div>
-                                <div class="body_text_cards_s3"><!--Text-->
+                                <div class="text_cards_s3"><!--Text-->
                                     <figcaption>
                                         <h4>
                                             Îles du Frioul
                                         </h4>
                                     </figcaption>
                             </article>
-                        </div><!--column 2 (cards x2)-->
+                        </div><!--column 2-->
+                    
+                        <article class="cards_s3 column_card_x1"><!--column 3-->
+                            <div class="img_cards_x1 img_4"><!--Image-->
+                                <img 
+                                src="images/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" 
+                                alt="Parc National des Calanques"
+                                style="width: 100%" 
+                                />  
+                            </div>
+                            <div class="text_cards_s3"><!--Text-->
+                                <figcaption>
+                                    <h4>
+                                        Parc National des Calanques
+                                    </h4>
+                                </figcaption>
+                            </div>
+                        </article><!--column 3--> 
                         
-                        <div class="column_card_x1"><!--column 3 (card x1)-->
-                            <article class="cards_s3">
-                                <div class="img_cards_x1"><!--Image-->
-                                    <img 
-                                    src="images/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" 
-                                    alt="Parc National des Calanques"
-                                    style="width: 100%"
-                                    />  
-                                </div>
-                                <div class="body_text_cards_s3"><!--Text-->
-                                    <figcaption>
-                                        <h4>
-                                            Parc National des Calanques
-                                        </h4>
-                                    </figcaption>
-                                </div>
-                            </article>
-                        </div><!--column 3 (card x1)--> 
-                        
-                        <div class="column_cards_x2"><!--column 4 (cards x2)-->
-                            <article class="cards_s3">
-                                <div class="img_cards_x2_04"><!--Image-->
+                        <div class="column_cards_x2 cards_s3"><!--column 4-->
+                            <article class=" ">
+                                <div class="img_cards_x2_04 img_5"><!--Image-->
                                     <img 
                                     src="images/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg" 
                                     alt="Notre-Dame_de-la-Garde"
-                                    style="width: 100%"
+                                    style="width:100%"
                                     />  
                                 </div>
-                                <div class="body_text_cards_s3"><!--Text-->
+                                <div class="text_cards_s3"><!--Text-->
                                     <figcaption>
                                         <h4>
                                             Notre-Dame-de-la-Garde
@@ -496,22 +495,22 @@
                                 </div>
                             </article>
 
-                            <article class="cards_s3">
-                                <div class="img_cards_x2_06"><!--Image-->
+                            <article class=" ">
+                                <div class="img_cards_x2_06 img_6"><!--Image-->
                                     <img 
                                     src="images/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg" 
                                     alt="Parc Longchamp"
-                                    style="width: 100%"
+                                    style="width:100%"
                                     />  
                                 </div>
-                                <div class="body_text_cards_s3"><!--Text-->
+                                <div class="text_cards_s3"><!--Text-->
                                     <figcaption>
                                         <h4>
                                             Parc Longchamp
                                         </h4>
                                     </figcaption>
                             </article>
-                        </div><!--column 4 (cards x2)-->
+                        </div><!--column 4-->
 
                     </div><!--all_cards_s3-->
                 </section>
