@@ -26,7 +26,7 @@
 .column_card_x1 {
     width: 23%;
     height: 100%;
-    border-radius: 25px; 
+    border-radius: 15px; 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -36,7 +36,7 @@
 .column_cards_x2 { /* Problème */ 
     width: 23%;     
     height: 100%;
-    border-radius: 25px;  
+    border-radius: 15px;  
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -163,19 +163,19 @@
 }
 
 
-
-
-
-
-
-
-
-
 /* Hover */
 
-.text_cards_s3:hover { 
+.text_card_13:hover {
     color:  #0065FC;
-  }
+}
+
+.text_card_26:hover {
+    color:  #0065FC;
+}
+
+.text_card_35:hover {
+    color:  #0065FC;
+}
 
 
 /* Media queries */
@@ -187,21 +187,45 @@
 
 @media screen and (max-width: 768px) {
 
-    .all_cards_s3 {
-        flex-direction: column;
-        justify-content: space-between ;
-        
+    .title_s3 {
+        padding: 0 5%;
     }
-    
-    .section_3_activites {
-        width: 90%;
-        margin-left: 5%;
+
+    .bloc_cards_s3 {
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 2.5%;  
+        border-radius: 0px;
+        width: 100%;
+        height: 100%;
     }
 
     .column_card_x1 {
         width: 100%;
+        height: 200px;
     }
 
     .column_cards_x2 {
         width: 100%; 
     }
+
+    .cards_s3 {
+        height: 200px; 
+        margin: 5% 0 5% 0; 
+        
+
+    }
+
+    .img_cards_s3 {
+        height: 150px; 
+    }
+
+    .img_cards_s3 img {
+        justify-content: flex-start ; /* Non */ 
+    }
+
+}
+
+
+
+
