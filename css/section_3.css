@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: column;
     margin-top: 4%; 
-    border: solid yellowgreen; 
 }
 
 .title_s3 {
@@ -12,14 +11,17 @@
     margin-bottom: 0;
 }
 
-.all_cards_s3 { /* Bloc avec les 4 colonnes */ 
+/* Bloc Activités */
+
+.bloc_cards_s3 { /* Bloc avec les 4 colonnes */ 
     display: flex;
     flex-direction: row;
     justify-content: space-between; 
     width: 100%;
     height: 450px; /* Seule hauteur en px */ 
-    border: solid black; 
 }
+
+/* Columns */
 
 .column_card_x1 {
     width: 23%;
@@ -27,117 +29,138 @@
     border-radius: 25px; 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     box-shadow: 1px 1px 8px 2px lightgray;
-    border: solid red;
-    
-    
 }
-
-.cards_s3 { /* cube_activites */
-    box-shadow: 1px 1px 8px 2px lightgray;
-    border-radius: 25px; 
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border: black;
-}
-
-.img_cards_x1 {
-    height: 100%;
-}
-
-.img_cards_x1 img {
-    height: 100%; 
-    object-fit: cover;
-    border-radius: 25px 25px 0 0; 
-} 
 
 .column_cards_x2 { /* Problème */ 
     width: 23%;     
     height: 100%;
     border-radius: 25px;  
-    box-shadow: 1px 1px 8px 2px lightgray;
-    border: solid red;
     display: flex;
     flex-direction: column;
-    justify-content: space-center;
-
+    justify-content: space-between;
 }
 
-.img_cards_x2_04 {
-    height: 100%;
-    border: solid blueviolet;
-    
-    
+/* Text */
+
+.text_card_13 {
+    padding-top: 5%;
+    padding-left: 5%;
 }
 
-.img_cards_x2_04 img { /* Image hauteur 40% */
-    height: 100%;
-    max-width: 100%;
-    border-radius: 25px 25px 0 0; 
-    object-fit: cover;
-    border: solid yellowgreen;
-    
+.text_card_26 {
+    padding-top: 5%;
+    padding-left: 5%;
 }
 
-.img_cards_x2_06 {
-    border: solid pink;
-    height: 100%;
-    
+.text_card_35 {
+    padding-top: 5%;
+    padding-left: 5%;
 }
 
-.img_cards_x2_06 img { /* Image hauteur 60% */
-    height: 90%; 
-    width: 100%;
-    border-radius: 25px 25px 0 0; 
-    object-fit: cover;
-    border: solid yellowgreen;
-}
-
-.text_cards_s3 {
-    margin-left: 5%;
-    height: 20%;
-    border: solid greenyellow;
-}
+/* Cards */
 
 .card_1 {
+    height: 100%;
 }
+
+.img_card_1 {
+    height: 88%;
+}
+
+.img_card_1 img {
+    height: 100%; 
+    object-fit: cover;
+    border-radius: 15px 15px 0 0; 
+}
+
+
 .card_2 {
-    height: 50%; 
-    object-fit: cover; 
-    border: solid black;
+    height: 53%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 8px 2px lightgray;
+    border-radius: 15px; 
 }
+
+.img_card_2 {
+    height: 78%; 
+}
+
+.img_card_2 img {
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 15px 15px 0 0; 
+}
+
 .card_3 {
-    height: 25%;
-    object-fit: cover; 
-    border: solid black;
+    height: 37%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 8px 2px lightgray;
+    border-radius: 15px; 
 }
+
+.img_card_3 {
+    height: 68%; 
+}
+
+.img_card_3 img {
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 15px 15px 0 0;
+}
+
 .card_4 {
+    height: 100%;
 }
+
+.img_card_4 {
+    height: 88%;
+}
+
+.img_card_4 img {
+    height: 100%; 
+    object-fit: cover;
+    border-radius: 15px 15px 0 0; 
+}
+
 .card_5 {
-    height: 25%;
-    object-fit: cover; 
-    border: solid black;
+    height: 37%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 8px 2px lightgray;
+    border-radius: 15px; 
 } 
-.card_6 {
-    height: 50%; 
-    object-fit: cover; 
-    border: solid black;
+
+.img_card_5 {
+    height: 68%; 
 }
 
+.img_card_5 img {
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 15px 15px 0 0; 
+}
 
+.card_6 {
+    height: 53%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 8px 2px lightgray;
+    border-radius: 15px; 
+}
 
+.img_card_6 {
+    height: 78%; 
+}
 
-
-
-
-
-
-
-
-
+.img_card_6 img {
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 15px 15px 0 0; 
+}
 
 
 
@@ -181,13 +204,4 @@
 
     .column_cards_x2 {
         width: 100%; 
-    }
-
-    .cards_s3 {
-        width: 100%;
-        margin-bottom: 5%;
-    }
-
-    .img_cards_x1 img {
-        height: 150px; 
     }
