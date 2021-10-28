@@ -22,7 +22,7 @@
 }
 
 .column_card_x1 {
-    width: 23%; /* 21% */
+    width: 23%;
     height: 100%;
     border-radius: 25px; 
     display: flex;
@@ -37,7 +37,7 @@
 .cards_s3 { /* cube_activites */
     box-shadow: 1px 1px 8px 2px lightgray;
     border-radius: 25px; 
-    height: 100%;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -55,21 +55,22 @@
 } 
 
 .column_cards_x2 { /* Problème */ 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 23%; 
+    width: 23%;     
     height: 100%;
-    border-radius: 25px; 
+    border-radius: 25px;  
+    box-shadow: 1px 1px 8px 2px lightgray;
     border: solid red;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-center;
+
 }
 
 .img_cards_x2_04 {
-    height: 40%;
+    height: 100%;
     border: solid blueviolet;
+    
+    
 }
 
 .img_cards_x2_04 img { /* Image hauteur 40% */
@@ -82,13 +83,13 @@
 }
 
 .img_cards_x2_06 {
-    height: 60%; 
     border: solid pink;
-    object-fit: cover;
+    height: 100%;
+    
 }
 
 .img_cards_x2_06 img { /* Image hauteur 60% */
-    height: 100%; 
+    height: 90%; 
     width: 100%;
     border-radius: 25px 25px 0 0; 
     object-fit: cover;
@@ -97,28 +98,33 @@
 
 .text_cards_s3 {
     margin-left: 5%;
-    padding-top: 4%;    
-    margin-bottom: 5%; 
+    height: 20%;
     border: solid greenyellow;
 }
 
-.img_1 {
+.card_1 {
 }
-.img_2 {
-    height: 60%;
-    object-fit:scale-down;  
+.card_2 {
+    height: 50%; 
+    object-fit: cover; 
+    border: solid black;
 }
-.img_3 {
-    height: 40%;
+.card_3 {
+    height: 25%;
+    object-fit: cover; 
+    border: solid black;
 }
-.img_4 {
-
+.card_4 {
 }
-.img_5 {
-    height: 40%;
+.card_5 {
+    height: 25%;
+    object-fit: cover; 
+    border: solid black;
 } 
-.img_6 {
-    height: 60%; 
+.card_6 {
+    height: 50%; 
+    object-fit: cover; 
+    border: solid black;
 }
 
 
