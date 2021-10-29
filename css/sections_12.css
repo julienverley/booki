@@ -188,6 +188,40 @@ figcaption h4 { /* h4 Auberge la Cannebière */
 
 @media screen and (max-width: 992px) {
    
+    .sections_12 {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .section_1_hebergements {
+        width: 100%;
+        margin-left: 3%;
+        margin-right: 4%; 
+        padding-left: 2%;
+        padding-right: 0%;
+    }
+
+    .section_2_populaires {
+        width: 100%;
+        margin-top: 5%;
+        margin-left: 3%;
+        margin-right: 4%; 
+        padding-left: 2%;
+        padding-right: 4%;
+    }
+
+    .bloc_cards_s2{
+        margin-bottom: 0%; 
+     }
+
+    .title_icon_s2 {
+        padding-left: 1.5%;
+    }
+
+    .bloc_cards_s2 {
+        flex-direction: row;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -209,7 +243,6 @@ figcaption h4 { /* h4 Auberge la Cannebière */
         justify-content: space-between; /* Ne fonctionne pas, => margin-bottom sur section_2_populaires */
         margin: 0;
     }
-    
 
     /* Section 1 Hébergements */
     .section_1_hebergements {
@@ -217,19 +250,27 @@ figcaption h4 { /* h4 Auberge la Cannebière */
         background-color: white;
         padding: 0 2.5%;  
         width: 90%;
+        margin-top: 5%;
     }
 
     .section_1_hebergements {
         flex-direction: column;
         width: 100%;
+        margin-right: 0;
+        margin-left: 0;
     }
 
     .bloc_cards_s1 {
     }
 
+    .bloc_cards_s2 {
+        flex-direction: column;
+    }
+
     .cards_s1 { /* A centrer */
         flex-direction: column;
         width: 96%; /* Pb : il y a plus de marge que s2 */
+        margin-bottom: 8%;
     }
 
     .img_cards_s1 img {
@@ -242,10 +283,12 @@ figcaption h4 { /* h4 Auberge la Cannebière */
     .section_2_populaires {
         flex-direction: column;
         width: 100%;
-        padding: 0 2.5%;  
+        padding: 0 2.5%;          
+        padding-top: 5%; 
         border-radius: 0;
         margin-top: 5%;
-        padding-top: 5%; 
+        margin-right: 0;
+        margin-left: 0;
     }
     
     .title_icon_s2 {
@@ -254,6 +297,7 @@ figcaption h4 { /* h4 Auberge la Cannebière */
 
     .cards_s2 {
         width: 96%;
+        margin-bottom: 8%;
     }
 
     .bloc_cards_s2 {
