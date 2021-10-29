@@ -4,6 +4,7 @@
     display: flex; /* flex-wrap: wrap pour tablet */
     justify-content: space-between;
     width: 100%;
+    margin-top: 5%;
 }
 
 
@@ -33,7 +34,8 @@ figcaption h4 { /* h4 Auberge la Cannebière */
     width: 62.5%;
     background-color: #f2F2F2; 
     border-radius: 15px; 
-    margin-left: 0%; /* Pb ? */ 
+    margin-left: 0%;
+    padding-top: 1%; /* Alignements des titres */
 }
 
 .title_s1 {
@@ -100,7 +102,8 @@ figcaption h4 { /* h4 Auberge la Cannebière */
     border-radius: 15px; 
     padding-left: 2%;
     padding-right: 2%;
-    margin-right: 2.5%;
+    margin-right: 2.5%;   
+    padding-top: 1.7%;  /* Alignements des titres */
 }
 
 .title_icon_s2 {
@@ -241,6 +244,8 @@ figcaption h4 { /* h4 Auberge la Cannebière */
         width: 100%;
         padding: 0 2.5%;  
         border-radius: 0;
+        margin-top: 5%;
+        padding-top: 5%; 
     }
     
     .title_icon_s2 {

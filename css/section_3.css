@@ -4,6 +4,8 @@
     display: flex;
     flex-direction: column;
     margin-top: 4%; 
+    padding-left: 3%;
+    padding-right: 1%; 
 }
 
 .title_s3 {
@@ -15,47 +17,37 @@
 
 .bloc_cards_s3 { /* Bloc avec les 4 colonnes */ 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-between; 
     width: 100%;
     height: 450px; /* Seule hauteur en px */ 
+    margin-right: 0%;
 }
 
-/* Columns */
-
-.column_card_x1 {
+.cards_s3 { 
     width: 23%;
     height: 100%;
     border-radius: 15px; 
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    box-shadow: 1px 1px 8px 2px lightgray;
+    box-shadow: 1px 1px 8px 2px lightgray;   
 }
 
-.column_cards_x2 { /* Problème */ 
-    width: 23%;     
-    height: 100%;
-    border-radius: 15px;  
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+
 
 /* Text */
 
 .text_card_13 {
-    padding-top: 5%;
+    padding-top: 7%;
     padding-left: 5%;
 }
 
 .text_card_26 {
-    padding-top: 5%;
+    padding-top: 7%;
     padding-left: 5%;
 }
 
 .text_card_35 {
-    padding-top: 5%;
+    padding-top: 7%;
     padding-left: 5%;
 }
 
@@ -194,7 +186,7 @@
     .bloc_cards_s3 {
         flex-direction: column;
         justify-content: space-between;
-        padding: 0 2.5%;  
+        padding: 0 4% 0 2%;  
         border-radius: 0px;
         width: 100%;
         height: 100%;
@@ -210,10 +202,9 @@
     }
 
     .cards_s3 {
+        width: 100%;
         height: 200px; 
         margin: 5% 0 5% 0; 
-        
-
     }
 
     .img_cards_s3 {
@@ -222,6 +213,21 @@
 
     .img_cards_s3 img {
         justify-content: flex-start ; /* Non */ 
+    }
+
+    .text_card_13 {
+        padding-top: 4%;
+        padding-left: 5%;
+    }
+    
+    .text_card_26 {
+        padding-top: 4%;
+        padding-left: 5%;
+    }
+    
+    .text_card_35 {
+        padding-top: 4%;
+        padding-left: 5%;
     }
 
 }
