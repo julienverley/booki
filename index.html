@@ -44,8 +44,6 @@
             </nav>
         </header> 
 
-
-
         <!-- Main -->
         <main> 
             <!-- Title (h1 & p) -->
@@ -54,27 +52,14 @@
                 <p>En plein centre ville ou en pleine nature</p> 
             </div>
             
-
             <!-- Search form -->
-            <form method="post" action="traitement.php" class="container"> 
-                <div class="map_icon">
-                    <i class="fas fa-map-marker-alt"></i><!--Icon map-->
-                </div>
-                <div id="search">
-                    <label for="recherche"></label>
-                    <input type="search" value="Marseille, France"  name=recherche id="recherche" />
-                </div>
-                <div id="search_desktop"><!-- Version desktop -->
-                    <input type="submit" value="Rechercher" class="search_button"><!-- Version desktop -->
-                </div>
-                <div id="search_mobile"><!--Version mobile à élargir-->
-                    <input type="submit" value="Rechercher" class="search_button">
-                    <div id="search_button_mobile"><button type="submit" class="fas fa-search"></button></div>
-                </div>
-                <br />
+            <form method="post" action="traitement.php" class="input_wrapper">
+                <div><i class="fas fa-map-marker-alt map_icon"></i></div><!--map icon (mobile & desktop)-->
+                <input type:"search" placeholder="Marseille, France" /><!--search field input-->
+                <div type="submit" class="mobile_button"><i class="fas fa-search"></i></div><!--mobile icon button-->
+                <input type="submit" value="Rechercher" class="desktop_button"><!--Desktop icon button-->
             </form>
-
-
+            
             <!-- Filters !-->
             <div class="filter_section container margin_between_sections"><!--.filter_section-->
                 <div class="filter_title_margin flex_center">

@@ -1,85 +1,131 @@
 /* Search form */
 
-form {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 2em; /* Margins top bottom manuelles */
-  margin-bottom: 2em;
-}
-
 .map_icon {
   padding: 11px 13px;
-  background-color: #f2f2f2;
-  border-radius: 10px 0 0 10px; 
-}
-form div input {
-  height: 40px;
-  padding-left: 10px;
+    background-color: #f2f2f2;
+    border-radius: 10px; 
+    width: 50px; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
 }
 
-.search_button {
+form input {
+  padding-left: 5%;
+}
+
+.input_wrapper { /* the all search object */ 
+  display: flex; 
+  align-items : center; 
+  justify-content : space-between; 
+  background-color: #f2f2f2;
+  border-radius: 15px; 
+  margin: 0 2.5%;
+  width: 420px;
+}
+
+form input { /* search field */
+  height: 50px;
+  width: 100%;
+  border: solid #f2f2f2 2px;
+  font-weight: bolder;
+  color: black; 
+}
+
+.mobile_button {
+  height: 50px;
+  width: 60px;
+  border-radius: 10px; 
+  background-color: #0065FC;
+  border: solid #0065FC;
+  color: white;    
+  display: none;
+}
+
+.desktop_button {
+  height: 50px;
+  width: 60%; 
+  padding-left: 1%;
   border-radius: 0 10px 10px 0; 
   background-color: #0065FC;
   border: solid #0065FC;
   color: white;
+  margin-left: -10%;
+  font-weight: bolder;
 }
 
-#recherche { /* Changer de nom pour #search_field */
-  border: solid #f2f2f2 2px;
-}
 
-#search_mobile { /* Changer de nom pour #search_field_mobile */
-  display: none;
-}
 
 /* Media queries */
 
 @media screen and (max-width: 992px) {
+  
+  /* Titles */ 
+  
+  .main_titles { 
+    padding-left: 0%;
+    padding-bottom: 2%;
+  }
+  
+  /* Search form */
+
+  .input_wrapper {
+    width: 90%;
+  }
+
+  .desktop_button {
+    display: none;
+  }
+
+  form input { /* search field */
+    height: 50px;
+    width: 100%;
+    border: solid #f2f2f2 2px;
+  }
+
+  .mobile_button { 
+    margin-left: -5%; /* !!! Solution !!! */
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+  }
+
+  
 }
 
 @media screen and (max-width: 768px) { /* Mobile */
   
-  .main_titles {
+  /* Titles */ 
+  
+  .main_titles { 
     padding-left: 5%;
     padding-bottom: 2%;
   }
+  
+  /* Search form */
 
-  form {
-    padding-left: 5%;
+  .input_wrapper {
+    margin-left: 5%; 
+    width: 90%;
   }
 
-  #recherche {
-    width: 150%; 
+  .desktop_button {
+    display: none;
   }
 
-  .search_button {
-    display: none; 
+
+  form input { /* search field */
+    height: 50px;
+    width: 100%;
+    border: solid #f2f2f2 2px;
   }
 
-  #search_mobile {
-    display: inline-block;    
-  }
-
-  #map_icon {
-    padding-left: 10%; 
-  }
-
-  #search_button_mobile {
-    margin-left: 60px;
-  }
-
-  button { /* ! Firefox mobile : le bouton va à la ligne ! J'ai enlevé la position absolute */  /* Changer de nom */
-    height: 40px;
-    width: 40px;
-    border-radius: 10px; 
-    background-color: #0065FC;
-    border: solid #0065FC;
-    color: white;
-  }
-
-  form p {
-    align-items: center; /* (redoudant) /* J'avais mis flex-direction: flex-start -> erreur W3C */
+  .mobile_button {    
+    margin-left: -5%; /* !!! Solution !!! */
     display: flex;
+    align-items: center; 
+    justify-content: center; 
   }
+
+
 }
