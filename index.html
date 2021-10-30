@@ -2,7 +2,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width"/> <!--viewport et content="width..." pour le responsive-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width"/> <!--viewport et content="width..." pour le responsive-->
     <link rel="stylesheet" href="css/style.css"/> 
     <link rel="stylesheet" href="css/header.css"/> 
     <link rel="stylesheet" href="css/search.css"/> 
@@ -27,8 +28,8 @@
                             class="margin_logo"
                             src="images/logo/Booki.png" 
                             alt="Logo" 
-                            width="95px"
-                            height="45px"
+                            width="95"
+                            height="45"
                         />
                     </div><!--Links-->
                     <ul id="header_links" class="flex_around size_links"><!--? ul et li ?-->
@@ -64,10 +65,10 @@
                     <input type="search" value="Marseille, France"  name=recherche id="recherche" />
                 </div>
                 <div id="search_desktop"><!-- Version desktop -->
-                    <input type="submit" value="Rechercher" id="search_button"><!-- Version desktop -->
+                    <input type="submit" value="Rechercher" class="search_button"><!-- Version desktop -->
                 </div>
                 <div id="search_mobile"><!--Version mobile à élargir-->
-                    <input type="submit" value="Rechercher" id="search_button">
+                    <input type="submit" value="Rechercher" class="search_button">
                     <div id="search_button_mobile"><button type="submit" class="fas fa-search"></button></div>
                 </div>
                 <br />
@@ -75,8 +76,7 @@
 
 
             <!-- Filters !-->
-            <div class="filter_section container margin_between_sections" {
-                "><!--.filter_section-->
+            <div class="filter_section container margin_between_sections"><!--.filter_section-->
                 <div class="filter_title_margin flex_center">
                     <h3><!--Mot Filtres sans icône-->
                         Filtres
@@ -130,11 +130,11 @@
                                 /> 
                             </div>
                             <div class="text_cards_s1"><!--Texte-->
-                                <figcaption>
+                                <div>
                                     <h4>
                                         Auberge La Cannebière
                                     </h4>
-                                </figcaption>                            
+                                </div>                            
                                 <p>
                                     Nuit à partir de 25€
                                 </p>   
@@ -157,11 +157,11 @@
                                 /> 
                             </div>
                             <div class="text_cards_s1"><!--Texte-->
-                                <figcaption>
+                                <div>
                                     <h4>
                                         Hôtel du port
                                     </h4>
-                                </figcaption>                            
+                                </div>                            
                                 <p>
                                     Nuit à partir de 52€
                                 </p>   
@@ -184,11 +184,11 @@
                                 />
                             </div>
                             <div class="text_cards_s1"><!--Texte-->
-                                <figcaption>
+                                <div>
                                     <h4>
                                         Hôtel Les mouettes
                                     </h4>
-                                </figcaption>                            
+                                </div>                            
                                 <p>
                                     Nuit à partir de 76€
                                 </p>   
@@ -211,11 +211,11 @@
                                 />
                             </div>
                             <div class="text_cards_s1"><!--Texte-->
-                                <figcaption>
+                                <div>
                                     <h4>
                                         Hôtel de la mer
                                     </h4>
-                                </figcaption>                            
+                                </div>                            
                                 <p>
                                     Nuit à partir de 46€
                                 </p>   
@@ -238,11 +238,11 @@
                                 /> 
                             </div>
                             <div class="text_cards_s1"><!--Texte-->
-                                <figcaption>
+                                <div>
                                     <h4>
                                         Auberge Le panier
                                     </h4>
-                                </figcaption>                            
+                                </div>                            
                                 <p>
                                     Nuit à partir de 23€
                                 </p>   
@@ -265,11 +265,11 @@
                                 />
                             </div>
                             <div class="text_cards_s1"><!--Texte-->
-                                <figcaption>
+                                <div>
                                     <h4>
                                         Hôtel chez Amina
                                     </h4>
-                                </figcaption>                            
+                                </div>                            
                                 <p>
                                     Nuit à partir de 96€
                                 </p>   
@@ -316,11 +316,11 @@
                         </div>
                         <div class="body_cards_s2">
                             <div class="text_cards_s2"><!--Texte-->
-                                <figcaption>
+                                <div>
                                     <h4>
                                         Hôtel Le soleil du matin
                                     </h4>
-                                </figcaption>                            
+                                </div>                            
                                 <p>
                                     Nuit à partir de 128€
                                 </p>   
@@ -345,11 +345,11 @@
                         </div>
                         <div class="body_cards_s2">
                             <div class="text_cards_s2"><!--Texte-->
-                                <figcaption>
+                                <div>
                                     <h4>
                                         Au coeur de l'eau Chambres d'hôtes
                                     </h4>
-                                </figcaption>                            
+                                </div>                            
                                 <p>
                                     Nuit à partir de 71€
                                 </p>   
@@ -374,11 +374,11 @@
                         </div>
                         <div class="body_cards_s2">
                             <div class="text_cards_s2"><!--Texte-->
-                                <figcaption>
+                                <div>
                                     <h4>
                                         Hôtel Tout bleu et Blanc
                                     </h4>
-                                </figcaption>                            
+                                </div>                            
                                 <p>
                                     Nuit à partir de 68€
                                 </p>   
@@ -422,11 +422,11 @@
                                     />  
                                 </div>
                                 <div class="text_card_13"><!--Text-->
-                                    <figcaption>
+                                    <div>
                                         <h4>
                                             Vieux Port
                                         </h4>
-                                    </figcaption>
+                                    </div>
                                 </div>
                             </article>
 
@@ -439,11 +439,11 @@
                                     />  
                                 </div>
                                 <div class="text_card_26"><!--Text-->                                        
-                                    <figcaption>
+                                    <div>
                                         <h4>
                                             Fort de Pomègues
                                         </h4>
-                                    </figcaption>
+                                    </div>
                                 </div>
                             </article>
 
@@ -456,11 +456,12 @@
                                     />  
                                 </div>
                                 <div class="text_card_35"><!--Text-->
-                                    <figcaption>
+                                    <div>
                                         <h4>
                                             Îles du Frioul
                                         </h4>
-                                    </figcaption>
+                                    </div>
+                                </div>
                             </article>
                         
                         </div><!--Colonnes 12-->
@@ -476,11 +477,11 @@
                                     />  
                                 </div>
                                 <div class="text_card_13"><!--Text-->
-                                    <figcaption>
+                                    <div>
                                         <h4>
                                             Parc National des Calanques
                                         </h4>
-                                    </figcaption>
+                                    </div>
                                 </div>
                             </article>
                         
@@ -493,11 +494,11 @@
                                     />  
                                 </div>
                                 <div class="text_card_35"><!--Text-->
-                                    <figcaption>
+                                    <div>
                                         <h4>
                                             Notre-Dame-de-la-Garde
                                         </h4>
-                                    </figcaption>
+                                    </div>
                                 </div>
                             </article>
                             <article class="card_6 cards_s3"><!--Card 6-->
@@ -509,11 +510,12 @@
                                     />  
                                 </div>
                                 <div class="text_card_26"><!--Text-->
-                                    <figcaption>
+                                    <div>
                                         <h4>
                                             Parc Longchamp
                                         </h4>
-                                    </figcaption>
+                                    </div>
+                                </div>
                             </article>
                         
                         </div><!--Colonnes 34-->
@@ -527,7 +529,7 @@
         <footer><!--Footer-->
             <div><!-- Column 1-->
                 <ul>
-                    <h4>A propos</h4>
+                    <li><h4>A propos</h4></li>
                     <li><p>Fonctionnement du site</p></li>
                     <li><p>Conditions générales de vente</p></li>
                     <li><p>Données et confidentialité</p></li>
@@ -535,14 +537,14 @@
             </div>
             <div><!-- Column 2-->
                 <ul>
-                    <h4>Nos hébergements</h4>
+                    <li><h4>Nos hébergements</h4></li>
                     <li><p>Charte qualité</p></li>
                     <li><p>Soumettre votre hôtel</p></li>
                 </ul>
             </div>
             <div><!-- Column 3-->
                 <ul>
-                    <h4>Assistance</h4>
+                    <li><h4>Assistance</h4></li>
                     <li><p>Centre d'aide</p></li>
                     <li><p>Nous contacter</p></li>
                 </ul>

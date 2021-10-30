@@ -19,7 +19,7 @@ form div input {
   padding-left: 10px;
 }
 
-#search_button {
+.search_button {
   border-radius: 0 10px 10px 0; 
   background-color: #0065FC;
   border: solid #0065FC;
@@ -54,7 +54,7 @@ form div input {
     width: 150%; 
   }
 
-  #search_button {
+  .search_button {
     display: none; 
   }
 
@@ -66,9 +66,8 @@ form div input {
     padding-left: 10%; 
   }
 
-
   #search_button_mobile {
-    margin-left: -15%;
+    margin-left: 60px;
   }
 
   button { /* ! Firefox mobile : le bouton va à la ligne ! J'ai enlevé la position absolute */  /* Changer de nom */
