@@ -303,7 +303,7 @@ figcaption h4 { /* h4 Auberge la Cannebière */
     .bloc_cards_s2 {
         width: 100%;
         margin: 0; 
-        border-radius: none;
+        border-radius: 0;
     }
 
     .img_cards_s2 img {

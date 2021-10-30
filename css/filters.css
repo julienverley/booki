@@ -35,7 +35,7 @@
 .filter_text { 
   margin-left: 15px; /* pixels */
   height: 50px;
-  border-radius: 0 25 px 25px 0;
+  border-radius: 0 25px 25px 0;
 }
 
 .filter_icons { /* Cf. .flex_center Firefox mobile, icones pas centrées. Dans l'inspecteur, si j'enlève l'inline-block, ça se recentre */

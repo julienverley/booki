@@ -15,7 +15,6 @@ form {
 }
 form div input {
   height: 40px;
-  width: ;
   padding-left: 10px;
 }
 
@@ -80,8 +79,7 @@ form div input {
   }
 
   form p {
-    align-items: center; /* (redoudant) */
+    align-items: center; /* (redoudant) /* J'avais mis flex-direction: flex-start -> erreur W3C */
     display: flex;
-    flex-direction: flex-start;
   }
-
+}
