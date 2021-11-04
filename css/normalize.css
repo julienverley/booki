@@ -38,8 +38,8 @@ main {
  */
 
 h1 {
-  font-size: 1.4em;
-  margin: 0.67em 0;
+  font-size: 22px;
+  margin: 10.5px 0;
 }
 
 /* Grouping content
@@ -63,7 +63,7 @@ hr {
 
 pre {
   font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-size: 16px; /* 2 */
 }
 
 /* Text-level semantics
@@ -106,7 +106,7 @@ code,
 kbd,
 samp {
   font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-size: 16px; /* 2 */
 }
 
 /**
@@ -131,11 +131,11 @@ sup {
 }
 
 sub {
-  bottom: -0.25em;
+  bottom: -4px;
 }
 
 sup {
-  top: -0.5em;
+  top: -8px;
 }
 
 /* Embedded content
@@ -227,7 +227,7 @@ button:-moz-focusring,
  */
 
 fieldset {
-  padding: 0.35em 0.75em 0.625em;
+  padding: 5.5px 12px 10px;
 }
 
 /**

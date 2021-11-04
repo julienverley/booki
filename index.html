@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,8 +17,10 @@
     <title>Booki</title>
 </head>
 <body>
-   <div id="bloc_page">
-        <!-- Header : logo & menu Hébergement Activités -->
+   
+    <div id="bloc_page">
+      
+    <!-- Header : logo & menu Hébergement Activités -->
         <header>
             <nav class="size_nav">
                 <div class="flex_between">
@@ -46,6 +47,7 @@
 
         <!-- Main -->
         <main> 
+           
             <!-- Title (h1 & p) -->
             <div class="main_titles container">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -57,7 +59,7 @@
                 <div><i class="fas fa-map-marker-alt map_icon"></i></div><!--map icon (mobile & desktop)-->
                 <input type:"search" placeholder="Marseille, France" class="search_field" /><!--search field input-->
                 <div type="submit" class="mobile_button"><i class="fas fa-search"></i></div><!--mobile icon button-->
-                <input type="submit" value="Rechercher" class="desktop_button"><!--Desktop icon button-->
+                <input type="submit" value="Rechercher" class="desktop_button" /><!--Desktop icon button-->
             </form>
             
             <!-- Filters !-->
@@ -66,7 +68,7 @@
                     <h3><!--Mot Filtres sans icône-->
                         Filtres
                     </h3>
-                </div> 
+                </div>
                 <div class="filter"><!--.filter--> 
                     <div class="filter_text_icons flex_between"><!--.filter_text_icons-->
                         <div class="filter_icons flex_center"><i class="fa fa-money-bill-wave fa-lg"></i></div><!--.filter_icons--><!--fa-lg pour zoomer sur l'icône-->
@@ -92,7 +94,6 @@
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
 
-
             <!--Sections 1 et 2-->
             <div class="sections_12">                 
                
@@ -103,9 +104,9 @@
                             Hébergements à Marseille
                         </h2>
                     </div>
-                    
+                   
                     <div class="bloc_cards_s1">
-
+                      
                         <article class="cards_s1 cards_s12"><!--Card 1-->
                             <div class="img_cards_s1"><!--Image--><!--J'utiliserai srcset (responsive images) pour une prochain projet, avec de larges images -->
                                 <img 
@@ -267,20 +268,16 @@
                                 <div><i class="fas fa-star fa-xs grey_stars"></i></div>
                             </div>   
                         </article>
-
                     </div><!--bloc_cards_s1-->
                     <div class="afficher_plus">
                         <h4>
                             Afficher plus
                         </h4>
                     </div>
-
                 </section><!--Section 1-->
-
 
                 <!-- Section 2 Les plus populaires -->
                 <section class="section_2_populaires">
-
                     <div class="title_icon_s2 flex_between"><!--Titre & icône-->
                         <div><!--Titre-->
                             <h2>
@@ -292,97 +289,95 @@
                     
                     <div class="bloc_cards_s2"><!--Cards (1 card = 1 article)-->
                     
-                    <article class="cards_s2 cards_s12"><!--Card 1 Hôtel Le soleil-->
-                        <div class="img_cards_s2"><!--Image-->
-                            <img 
-                            src="images/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"                                 alt="Auberge La Cannebière"
-                            style="width: 100%"
-                            />  
-                        </div>
-                        <div class="body_cards_s2">
-                            <div class="text_cards_s2"><!--Texte-->
-                                <div>
-                                    <h4>
-                                        Hôtel Le soleil du matin
-                                    </h4>
-                                </div>                            
-                                <p>
-                                    Nuit à partir de 128€
-                                </p>   
+                        <article class="cards_s2 cards_s12"><!--Card 1 Hôtel Le soleil-->
+                            <div class="img_cards_s2"><!--Image-->
+                                <img 
+                                src="images/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"                                 alt="Auberge La Cannebière"
+                                style="width: 100%"
+                                />  
                             </div>
-                            <div class="stars_s2"><!--Etoiles-->
-                                <div><i class="fas fa-star fa-xs blue_stars"></i></div>
-                                <div><i class="fas fa-star fa-xs blue_stars"></i></div>
-                                <div><i class="fas fa-star fa-xs blue_stars"></i></div>    
-                                <div><i class="fas fa-star fa-xs blue_stars"></i></div>
-                                <div><i class="fas fa-star fa-xs blue_stars"></i></div>
+                            <div class="body_cards_s2">
+                                <div class="text_cards_s2"><!--Texte-->
+                                    <div>
+                                        <h4>
+                                            Hôtel Le soleil du matin
+                                        </h4>
+                                    </div>                            
+                                    <p>
+                                        Nuit à partir de 128€
+                                    </p>   
+                                </div>
+                                <div class="stars_s2"><!--Etoiles-->
+                                    <div><i class="fas fa-star fa-xs blue_stars"></i></div>
+                                    <div><i class="fas fa-star fa-xs blue_stars"></i></div>
+                                    <div><i class="fas fa-star fa-xs blue_stars"></i></div>    
+                                    <div><i class="fas fa-star fa-xs blue_stars"></i></div>
+                                    <div><i class="fas fa-star fa-xs blue_stars"></i></div>
+                                </div>
                             </div>
-                        </div>
-                    </article>
+                        </article>
 
-                    <article class="cards_s2 cards_s12"><!--Card 2 Au coeur... -->
-                        <div class="img_cards_s2"><!--Image-->
-                            <img 
-                            src="images/hebergements/aw-creative-VGs8z60yT2c-unsplash.jpg"  
-                            alt="Au coeur de l'eau Chambres d'hôtes"
-                            style="width: 100%"
-                            />
-                        </div>
-                        <div class="body_cards_s2">
-                            <div class="text_cards_s2"><!--Texte-->
-                                <div>
-                                    <h4>
-                                        Au coeur de l'eau Chambres d'hôtes
-                                    </h4>
-                                </div>                            
-                                <p>
-                                    Nuit à partir de 71€
-                                </p>   
+                        <article class="cards_s2 cards_s12"><!--Card 2 Au coeur... -->
+                            <div class="img_cards_s2"><!--Image-->
+                                <img 
+                                src="images/hebergements/aw-creative-VGs8z60yT2c-unsplash.jpg"  
+                                alt="Au coeur de l'eau Chambres d'hôtes"
+                                style="width: 100%"
+                                />
                             </div>
-                            <div class="stars_s2"><!--Etoiles-->
-                                <div><i class="fas fa-star fa-xs blue_stars"></i></div>
-                                <div><i class="fas fa-star fa-xs blue_stars"></i></div>
-                                <div><i class="fas fa-star fa-xs blue_stars"></i></div>    
-                                <div><i class="fas fa-star fa-xs blue_stars"></i></div>
-                                <div><i class="fas fa-star fa-xs blue_stars"></i></div>
-                        </div>
-                        </div>
-                    </article>
+                            <div class="body_cards_s2">
+                                <div class="text_cards_s2"><!--Texte-->
+                                    <div>
+                                        <h4>
+                                            Au coeur de l'eau Chambres d'hôtes
+                                        </h4>
+                                    </div>                            
+                                    <p>
+                                        Nuit à partir de 71€
+                                    </p>   
+                                </div>
+                                <div class="stars_s2"><!--Etoiles-->
+                                    <div><i class="fas fa-star fa-xs blue_stars"></i></div>
+                                    <div><i class="fas fa-star fa-xs blue_stars"></i></div>
+                                    <div><i class="fas fa-star fa-xs blue_stars"></i></div>    
+                                    <div><i class="fas fa-star fa-xs blue_stars"></i></div>
+                                    <div><i class="fas fa-star fa-xs blue_stars"></i></div>
+                                </div>
+                            </div>
+                        </article>
 
-                    <article class="cards_s2 cards_s12"><!--Card 3 Hôtel tout bleu...-->
-                        <div class="img_cards_s2"><!--Image-->
-                            <img 
-                            src="images/hebergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg"    
-                            alt="Hôtel Tout bleu et Blanc"
-                            style="width: 100%"
-                            />  
-                        </div>
-                        <div class="body_cards_s2">
-                            <div class="text_cards_s2"><!--Texte-->
-                                <div>
-                                    <h4>
-                                        Hôtel Tout bleu et Blanc
-                                    </h4>
-                                </div>                            
-                                <p>
-                                    Nuit à partir de 68€
-                                </p>   
+                        <article class="cards_s2 cards_s12"><!--Card 3 Hôtel tout bleu...-->
+                            <div class="img_cards_s2"><!--Image-->
+                                <img 
+                                src="images/hebergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg"    
+                                alt="Hôtel Tout bleu et Blanc"
+                                style="width: 100%"
+                                />  
                             </div>
-                            <div class="stars_s2"><!--Etoiles-->
-                                <div><i class="fas fa-star fa-xs blue_stars"></i></div>
-                                <div><i class="fas fa-star fa-xs blue_stars"></i></div>
-                                <div><i class="fas fa-star fa-xs blue_stars"></i></div>    
-                                <div><i class="fas fa-star fa-xs blue_stars"></i></div>
-                                <div><i class="fas fa-star fa-xs blue_stars"></i></div>
+                            <div class="body_cards_s2">
+                                <div class="text_cards_s2"><!--Texte-->
+                                    <div>
+                                        <h4>
+                                            Hôtel Tout bleu et Blanc
+                                        </h4>
+                                    </div>                            
+                                    <p>
+                                        Nuit à partir de 68€
+                                    </p>   
+                                </div>
+                                <div class="stars_s2"><!--Etoiles-->
+                                    <div><i class="fas fa-star fa-xs blue_stars"></i></div>
+                                    <div><i class="fas fa-star fa-xs blue_stars"></i></div>
+                                    <div><i class="fas fa-star fa-xs blue_stars"></i></div>    
+                                    <div><i class="fas fa-star fa-xs blue_stars"></i></div>
+                                    <div><i class="fas fa-star fa-xs blue_stars"></i></div>
+                                </div>
                             </div>
-                        </div>
-                    </article>
-
+                        </article>
                     </div><!--bloc_cards_s2-->
                 </section><!--Section 2-->
             </div><!--sections_12-->
 
-        
             <!-- Section 3 Activités à Marseille -->
             <div>
                 <section class="section_3_activites ">
@@ -392,8 +387,6 @@
                         </h2>
                     </div>
         
-
-
                     <div class="bloc_cards_s3"><!--"bloc_activites"--> 
                         
                         <div class="bloc_cards_s3_colonnes12"><!--Colonnes 12-->
@@ -486,6 +479,7 @@
                                     </div>
                                 </div>
                             </article>
+
                             <article class="card_6 cards_s3"><!--Card 6-->
                                 <div class="img_card_6 img_cards_s3"><!--Image 6-->
                                     <img 
@@ -502,14 +496,12 @@
                                     </div>
                                 </div>
                             </article>
-                        
                         </div><!--Colonnes 34-->
-
                     </div><!--bloc_cards_s3-->
                 </section>
             </div><!--section_3_activités-->
-          
         </main>
+
         <!-- Footer -->
         <footer><!--Footer-->
             <div><!-- Column 1-->
@@ -535,10 +527,10 @@
                 </ul>
             </div>
         </footer>
-    
     </div><!--#bloc_page-->
-
-
-
 </body>
 </html>
+
+
+
+

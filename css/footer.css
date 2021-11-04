@@ -17,10 +17,20 @@ footer div {
     margin-right: 20%;
 }
 
+footer div ul li h4 {
+    font-size: 1em; 
+     
+}
+
+footer div ul li p {
+    font-size: 1em; 
+    color: grey; 
+}
 
 /* Media queries */
 
 @media screen and (max-width: 992px) {
+    
     main {
         display: flex;
         flex-direction: column;
@@ -28,7 +38,6 @@ footer div {
         padding-bottom: 500px;
     }
 }
-
 
 @media screen and (max-width: 768px) {
 
@@ -50,6 +59,3 @@ footer div {
         background-color: #F2F2F2; 
     }
 }
-
-
-

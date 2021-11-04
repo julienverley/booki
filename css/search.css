@@ -1,5 +1,10 @@
 /* Search form */
 
+
+.main_titles {
+  marginn-top: 0; 
+}
+
 .map_icon {
   padding: 11px 13px;
     background-color: #f2f2f2;
@@ -104,8 +109,6 @@ form input { /* search field */
     align-items: center; 
     justify-content: center; 
   }
-
-
 }
 
 @media screen and (max-width: 768px) { /* Mobile */
@@ -128,7 +131,6 @@ form input { /* search field */
     display: none;
   }
 
-
   form input { /* search field */
     height: 50px;
     width: 100%;
@@ -141,6 +143,4 @@ form input { /* search field */
     align-items: center; 
     justify-content: center; 
   }
-
-
 }
