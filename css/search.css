@@ -103,7 +103,7 @@ form input { /* search field */
   }
 
   .mobile_button { 
-    margin-left: -5%; /* !!! Solution !!! */
+    margin-left: -5%; 
     display: flex;
     align-items: center; 
     justify-content: center; 
@@ -140,7 +140,7 @@ form input { /* search field */
   }
 
   .mobile_button {    
-    margin-left: -5%; /* !!! Solution !!! */
+    margin-left: -5%; 
     display: flex;
     align-items: center; 
     justify-content: center; 
