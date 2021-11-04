@@ -174,7 +174,7 @@
 .cards_s3 { /* Carte cliquable */
     position: relative;
 }
-.cards_s3 > a { /* Carte cliquable */
+.cards_s3 > a { /* Carte cliquable sans override du style */
     position: absolute;
     top: 0;
     right: 0;
