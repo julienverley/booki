@@ -171,6 +171,17 @@
     border-radius: 15px 15px 0 0; 
 }
 
+.cards_s3 { /* Carte cliquable */
+    position: relative;
+}
+.cards_s3 > a { /* Carte cliquable */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
 /* Hover */
 
 .text_card_13:hover {
