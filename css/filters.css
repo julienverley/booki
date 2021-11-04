@@ -12,7 +12,7 @@
   display: flex; 
   flex-wrap: wrap;
   align-items: center;
-  width: 90%; /* ! Règle le problème de Animaux autorisés sur 2 lignes ! */
+  width: 90%; 
   padding-left: 4%;
 }
 
@@ -29,7 +29,7 @@
   padding-right: 2.2%;
   padding-left: 0%;
   margin-top: 0.5%;
-  margin-right: 3%; /* Pb au-delà de 4% */
+  margin-right: 3%; 
   margin-bottom: 0.5%;
 }
 
@@ -39,7 +39,7 @@
   border-radius: 0 25px 25px 0;
 }
 
-.filter_icons { /* Cf. .flex_center Firefox mobile, icones pas centrées. Dans l'inspecteur, si j'enlève l'inline-block, ça se recentre */
+.filter_icons { 
   margin-left: -15px;  /* pixels */
   border-radius: 25px;
   width: 50px;
@@ -70,7 +70,7 @@
 
 /* Hover */
 
-.filter_text_icons:hover { /* ? Pourquoi un hover seulement sur le texte ? */
+.filter_text_icons:hover { 
   color: #0065FC; 
 }
 
@@ -119,7 +119,7 @@
   }  
 
   .filter_text_icons {
-    margin-right: 5%;
+    margin-right: 6%;
     padding-right: 5%; 
   }
 

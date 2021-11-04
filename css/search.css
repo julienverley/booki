@@ -1,18 +1,13 @@
 /* Search form */
 
-
-.main_titles {
-  marginn-top: 0; 
-}
-
 .map_icon {
-  padding: 11px 13px;
-    background-color: #f2f2f2;
-    border-radius: 10px; 
-    width: 50px; 
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
+  padding: 11px 13px; 
+  background-color: #f2f2f2;
+  border-radius: 10px; 
+  width: 50px; 
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
 }
 
 .input_wrapper { /* the all search object */ 
@@ -28,8 +23,12 @@
 form input { /* search field */
   height: 50px;
   width: 100%;
-  border: solid #f2f2f2 2px;
+  border: solid #f2f2f2 1px;
   padding-left: 5%;
+}
+
+.search_field {
+  outline: none;
 }
 
 ::placeholder {
@@ -109,6 +108,8 @@ form input { /* search field */
     align-items: center; 
     justify-content: center; 
   }
+
+
 }
 
 @media screen and (max-width: 768px) { /* Mobile */
@@ -131,6 +132,7 @@ form input { /* search field */
     display: none;
   }
 
+
   form input { /* search field */
     height: 50px;
     width: 100%;
@@ -143,4 +145,6 @@ form input { /* search field */
     align-items: center; 
     justify-content: center; 
   }
+
+
 }

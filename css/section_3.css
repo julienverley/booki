@@ -6,7 +6,7 @@
     flex-direction: column;
     margin-top: 4%; 
     padding-left: 3%;
-    padding-right: 1%; 
+    padding-right: 0%; 
 }
 
 .title_s3 {
@@ -46,7 +46,7 @@
 }
 
 .cards_s3 { 
-    width: 46%;
+    width: 44.5%;
     height: 100%;
     border-radius: 15px; 
     box-shadow: 1px 1px 8px 2px lightgray;   
@@ -206,10 +206,12 @@
     .bloc_cards_s3_colonnes12 { /* Bloc avec les 2 colonnes */ 
         width: 100%;
         margin-bottom: 5%;
+        margin-right: 2%;
     }
 
     .bloc_cards_s3_colonnes34 { /* Bloc avec les 2 colonnes */ 
         width: 100%;
+        margin-right: 2%;
     }
 
     .cards_s3 {
@@ -236,11 +238,15 @@
 @media screen and (max-width: 768px) {
 
     .section_3_activites {
-        margin-right: 4%; 
+        margin-right: 6%; 
     }
 
     .title_s3 {
-        padding: 0 5%;
+        padding: 0 2%;
+    }
+
+    #activites {
+        margin-bottom: 0%;
     }
 
     .bloc_cards_s3 {
@@ -250,7 +256,7 @@
         border-radius: 0px;
         width: 100%;
         height: 100%;        
-        padding: 0 0 0 2%;  
+        padding: 0 0 0 1.5%;  
     }
 
     .bloc_cards_s3_colonnes12 { /* Bloc avec les 2 colonnes */ 
