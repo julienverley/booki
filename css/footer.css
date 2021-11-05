@@ -57,13 +57,11 @@ footer div ul li p {
     }
 
     body {
-        position: relative;
     }
 
     footer {
         display: flex;
         flex-direction: column;
-        position: relative;
         bottom: 0;
         padding: 5% 0 5% 5%; 
         background-color: #F2F2F2; 
@@ -75,7 +73,6 @@ footer div ul li p {
 
     footer div ul li h4 {
         font-size: medium; 
-         
     }
     
     footer div ul li p {

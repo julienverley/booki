@@ -25,10 +25,10 @@ a {
 
 .size_link {
   width: 150px; 
-  height: 79px; /* 99 */
+  height: 79px; 
 }
 
-.border_link { /* Si je le veux de manière permanente */
+.border_link { 
   border-top: 2px solid white;
 }
 
