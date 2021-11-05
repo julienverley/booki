@@ -143,6 +143,7 @@
 
 .img_cards_s2 img {
     height: 100%; /* 100% */
+    width: 100%;
     object-fit: cover;
     border-radius: 15px 0 0 15px; 
 }
@@ -330,6 +331,6 @@
     }
 
     .img_cards_s2 img {
-        width: 40%; 
+        width: 100%; 
     }  
 }

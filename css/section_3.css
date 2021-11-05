@@ -182,6 +182,10 @@
     left: 0;
 }
 
+.img_cards_s3 img {
+    width: 100%;
+}
+
 /* Hover */
 
 .text_card_13:hover {
@@ -298,9 +302,6 @@
 
     .img_cards_s3 {
         height: 150px; 
-    }
-
-    .img_cards_s3 img {
     }
 
     .text_card_13 {

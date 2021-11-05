@@ -82,14 +82,15 @@ form input { /* search field */
   /* Titles */ 
   
   .main_titles { 
-    padding-left: 0%;
+    padding-left: 1%;
     padding-bottom: 2%;
   }
   
   /* Search form */
 
   .input_wrapper {
-    width: 90%;
+    width: 92%;
+    margin-left: 4%;
   }
 
   .desktop_button {

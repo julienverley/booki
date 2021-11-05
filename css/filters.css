@@ -94,6 +94,20 @@
     flex-direction: column;
     align-items:flex-start; 
   }
+
+  .filter_title_margin {
+    margin-left: 1%;
+  }
+
+  .filter_text_icons {
+    margin-left: 1.1%;
+  }
+
+  .information_section {
+    margin-left: 4%;
+  }
+
+
 }
 
 @media screen and (max-width: 768px) {
