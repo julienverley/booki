@@ -8,6 +8,7 @@
   display: flex;
   align-items: center; 
   justify-content: center; 
+  cursor: pointer;
 }
 
 .input_wrapper { /* the all search object */ 
@@ -44,6 +45,7 @@ form input { /* search field */
   border: solid #0065FC;
   color: white;    
   display: none;
+  cursor: pointer;
 }
 
 .desktop_button {
@@ -56,6 +58,7 @@ form input { /* search field */
   color: white;
   margin-left: -10%;
   font-weight: bolder;
+  cursor: pointer;
 }
 
 /* Hover */
