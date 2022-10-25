@@ -18,13 +18,15 @@ https://julfrontdev.github.io/JulienVerley_2_10112021/
 
 ###Installation
 
-- Open new terminal
+- Open new terminal,
 - Clone my project:
 
 ```console
 $ git clone https://github.com/julfrontdev/JulienVerley_2_10112021
 
 ```
+
+- Open index.html in your browser.
 
 ### Thanks
 
