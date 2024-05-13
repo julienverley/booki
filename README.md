@@ -14,7 +14,7 @@ Julien Verley
 
 ### Visit on GitHub pages
 
-https://julfrontdev.github.io/JulienVerley_2_10112021/
+https://julienverley.github.io/booki/
 
 ###Installation
 
